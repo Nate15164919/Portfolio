@@ -20,6 +20,12 @@ const App = {
         modal: false,
         skillFilter: "all",
         skillPage: 0,
+        projectFilter: "all",
+        projectPage: 0,
+        docFilter: "all",
+        docPage: 0,
+        certFilter: "all",
+        certPage: 0,
     },
     data: {
         email: "contact.pro@nathaniel-t.fr",
@@ -55,6 +61,7 @@ Programmeur d’applications
 Responsable des services applicatifs
 Technicien d’études informatiques
 Technicien programmeur`,
+/*----------------- Competences  -----------------*/
         skills: [
             {
                 group: "os",
@@ -171,6 +178,7 @@ Technicien programmeur`,
                 tags: ["Python", "HTML/CSS", "Javascript", "JSON"],
             },
         ],
+/*----------------- Work  -----------------*/
         timeline: [
             {
                 role: "Administrateur Système et Réseau",
@@ -210,9 +218,11 @@ Technicien programmeur`,
                 ],
             },
         ],
+/*----------------- Projet  -----------------*/
         projects: [
             {
-                title: "Sunsar Logistics - Ops Dashboard",
+                title: "AP-1",
+                category: "atelier",
                 desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
                 cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
                 stack: ["React", "Node", "Mongo", "RBAC"],
@@ -236,7 +246,83 @@ Technicien programmeur`,
                 ],
             },
             {
-                title: "Payments + Orders Flow",
+                title: "AP-2",
+                category: "atelier",
+                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
+                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
+                stack: ["React", "Node", "Mongo", "RBAC"],
+                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                bullets: [
+                    "Role-based access (packs) with clear permission boundaries.",
+                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
+                    "API layer centralized for easy future changes.",
+                ],
+                links: [
+                    {
+                        label: "View (demo)",
+                        icon: "fa-solid fa-arrow-up-right-from-square",
+                        href: "#",
+                    },
+                    {
+                        label: "Code",
+                        icon: "fa-brands fa-github",
+                        href: "https://github.com/a2rp",
+                    },
+                ],
+            },
+            {
+                title: "AP-3",
+                category: "atelier",
+                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
+                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
+                stack: ["React", "Node", "Mongo", "RBAC"],
+                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                bullets: [
+                    "Role-based access (packs) with clear permission boundaries.",
+                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
+                    "API layer centralized for easy future changes.",
+                ],
+                links: [
+                    {
+                        label: "View (demo)",
+                        icon: "fa-solid fa-arrow-up-right-from-square",
+                        href: "#",
+                    },
+                    {
+                        label: "Code",
+                        icon: "fa-brands fa-github",
+                        href: "https://github.com/a2rp",
+                    },
+                ],
+            },
+            {
+                title: "AP-4",
+                category: "atelier",
+                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
+                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
+                stack: ["React", "Node", "Mongo", "RBAC"],
+                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                bullets: [
+                    "Role-based access (packs) with clear permission boundaries.",
+                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
+                    "API layer centralized for easy future changes.",
+                ],
+                links: [
+                    {
+                        label: "View (demo)",
+                        icon: "fa-solid fa-arrow-up-right-from-square",
+                        href: "#",
+                    },
+                    {
+                        label: "Code",
+                        icon: "fa-brands fa-github",
+                        href: "https://github.com/a2rp",
+                    },
+                ],
+            },
+            {
+                title: "exercice-1",
+                category: "exercice",
                 desc: "Checkout UX with receipts, status tracking, and clean form validation patterns.",
                 cover: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=70",
                 stack: ["React", "Express", "Stripe"],
@@ -260,7 +346,8 @@ Technicien programmeur`,
                 ],
             },
             {
-                title: "Payments + Orders Flow",
+                title: "Exercice-2",
+                category: "exercice",
                 desc: "Checkout UX with receipts, status tracking, and clean form validation patterns.",
                 cover: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=70",
                 stack: ["React", "Express", "Stripe"],
@@ -284,7 +371,8 @@ Technicien programmeur`,
                 ],
             },
             {
-                title: "Portfolio System (This Pen)",
+                title: "Exercice-3",
+                category: "exercice",
                 desc: "Theme + EN/HI toggle, scroll spy, modal case studies, particles, and magnetic UI.",
                 cover: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1400&q=70",
                 stack: ["Vanilla JS", "CSS", "UX"],
@@ -307,6 +395,395 @@ Technicien programmeur`,
                     },
                 ],
             },
+        ],
+/*----------------- Documentation  -----------------*/
+        documentation: [
+            {
+                title: "Migration Windows Server 2022",
+                category: "windows",
+                desc: "Procédures complètes et guide de migration vers Windows Server 2022.",
+                cover: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Windows Server", "AD", "Migration"],
+                meta: "Guide technique • 2025",
+                bullets: [
+                    "Analyse de l'existant et planification des étapes de migration.",
+                    "Rédaction des procédures de sauvegarde et de restauration.",
+                    "Guide de résolution des incidents post-migration."
+                ],
+                links: [
+                    {
+                        label: "Consulter le PDF",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "Sécurisation Serveur SSH",
+                category: "linux",
+                desc: "Hardening d'un serveur Linux Debian pour la production.",
+                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Linux", "Debian", "SSH", "Security"],
+                meta: "Procédure de sécurité • 2024",
+                bullets: [
+                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
+                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Gestion des utilisateurs et des groupes sudo."
+                ],
+                links: [
+                    {
+                        label: "Voir la procédure",
+                        icon: "fa-brands fa-linux",
+                        href: "#"
+                    }
+                ]
+            }
+        ],
+/*----------------- Certification  -----------------*/
+        certifications: [
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "CCNA 1 - Introduction aux Réseaux",
+                category: "network",
+                desc: "Cisco Networking Academy - 2024",
+                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Réseau", "Cisco", "Packet Tracer"],
+                meta: "Fondamentaux des réseaux et services IP.",
+                bullets: [
+                    "Architecture des réseaux et protocoles de communication.",
+                    "Configuration initiale des routeurs et commutateurs Cisco.",
+                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                ],
+                links: [
+                    {
+                        label: "Voir le badge",
+                        icon: "fa-solid fa-certificate",
+                        href: "#"
+                    }
+                ]
+            },
+            {
+                title: "SecNumAcadémie",
+                category: "security",
+                desc: "ANSSI - 2025",
+                cover: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Cybersécurité", "ANSSI", "MOOC"],
+                meta: "Sensibilisation à la sécurité des systèmes d'information.",
+                bullets: [
+                    "Authentification, mots de passe et chiffrement.",
+                    "Sécurité des postes de travail et nomadisme.",
+                    "Gestion des incidents et bonnes pratiques."
+                ],
+                links: [
+                    {
+                        label: "Attestation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "#"
+                    }
+                ]
+            }
+        ],
+/*----------------- Veille  -----------------*/
+        veille: [
+            {
+                title: "Sécurité des réseaux des transports en commun",
+                desc: "Analyse des vulnérabilités et protection des infrastructures critiques de transport.",
+                cover: "https://images.unsplash.com/photo-1517502884422-41e1f09d6f25?auto=format&fit=crop&w=1400&q=70",
+                stack: ["Cybersécurité", "IoT", "Transport", "Réseau"],
+                meta: "Sujet de veille • 2024 - 2025",
+                bullets: [
+                    "Étude des protocoles de communication embarqués et de leurs failles potentielles.",
+                    "Analyse des risques liés aux réseaux Wi-Fi publics et à la convergence IT/OT.",
+                    "Impact des cyberattaques sur la sûreté des passagers et la continuité de service.",
+                    "Solutions de segmentation et de surveillance des flux réseaux."
+                ],
+                links: [
+                    {
+                        label: "Synthèse PDF",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "#"
+                    }
+                ]
+            }
         ],
     },
 };
@@ -509,12 +986,30 @@ function renderTimeline() {
     });
 }
 
-function renderProjects() {
+function renderProjects(filter = null) {
+    if (filter) {
+        App.state.projectFilter = filter;
+        App.state.projectPage = 0;
+    }
+    const currentFilter = App.state.projectFilter;
+    const currentPage = App.state.projectPage;
+    const limit = 6;
     const root = $("#projectsGrid");
-    root.innerHTML = App.data.projects
+    
+    // Filtrer les projets
+    const list = App.data.projects
+        .filter((p) => (currentFilter === "all" ? true : p.category === currentFilter));
+    
+    const totalPages = Math.ceil(list.length / limit);
+    const visibleList = list.slice(currentPage * limit, (currentPage + 1) * limit);
+
+    root.innerHTML = visibleList
         .map(
-            (p, idx) => `
-    <div class="pCard" data-idx="${idx}" role="button" tabindex="0" aria-label="Open project ${escapeHTML(
+            (p) => {
+                // Retrouver l'index original pour la modale
+                const originalIdx = App.data.projects.indexOf(p);
+                return `
+    <div class="pCard" data-idx="${originalIdx}" role="button" tabindex="0" aria-label="Open project ${escapeHTML(
                 p.title
             )}">
       <div class="pCover" style="background-image:url('${p.cover}')">
@@ -537,12 +1032,248 @@ function renderProjects() {
         </div>
       </div>
     </div>
+  `;
+            }
+        )
+        .join("");
+
+    // Pagination controls
+    const pager = $("#projectsPagination");
+    if (pager) {
+        if (totalPages > 1) {
+            pager.innerHTML = `
+                <button class="iconBtn" id="prevProj" ${currentPage === 0 ? "disabled" : ""}><i class="fa-solid fa-chevron-left"></i></button>
+                <span style="font-family:ui-monospace; font-size:0.9rem; color:var(--text-muted);">${currentPage + 1} / ${totalPages}</span>
+                <button class="iconBtn" id="nextProj" ${currentPage >= totalPages - 1 ? "disabled" : ""}><i class="fa-solid fa-chevron-right"></i></button>
+            `;
+            $("#prevProj").onclick = () => {
+                App.state.projectPage--;
+                renderProjects();
+            };
+            $("#nextProj").onclick = () => {
+                App.state.projectPage++;
+                renderProjects();
+            };
+        } else {
+            pager.innerHTML = "";
+        }
+    }
+
+    $$(".pCard", root).forEach((card) => {
+        const open = () => openProjectModal(Number(card.dataset.idx));
+        card.addEventListener("click", open);
+        card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                open();
+            }
+        });
+    });
+}
+
+function renderDocumentation(filter = null) {
+    if (filter) {
+        App.state.docFilter = filter;
+        App.state.docPage = 0;
+    }
+    const currentFilter = App.state.docFilter;
+    const currentPage = App.state.docPage;
+    const limit = 6;
+    const root = $("#documentationGrid");
+    if (!root) return;
+    
+    const list = App.data.documentation
+        .filter((p) => (currentFilter === "all" ? true : p.category === currentFilter));
+
+    const totalPages = Math.ceil(list.length / limit);
+    const visibleList = list.slice(currentPage * limit, (currentPage + 1) * limit);
+
+    root.innerHTML = visibleList
+        .map(
+            (p) => {
+                const idx = App.data.documentation.indexOf(p);
+                return `
+    <div class="pCard" data-doc-idx="${idx}" role="button" tabindex="0" aria-label="Open doc ${escapeHTML(
+                p.title
+            )}">
+      <div class="pCover" style="background-image:url('${p.cover}')">
+        <div class="pOverlay">
+          <div class="pStack">
+            ${p.stack
+                .slice(0, 3)
+                .map((s) => `<span class="stackChip">${escapeHTML(s)}</span>`)
+                .join("")}
+          </div>
+          <div class="stackChip"><i class="fa-solid fa-up-right-from-square"></i></div>
+        </div>
+      </div>
+      <div class="pBody">
+        <div class="pTitle">${escapeHTML(p.title)}</div>
+        <div class="pDesc">${escapeHTML(p.desc)}</div>
+        <div class="pFoot">
+          <span><i class="fa-solid fa-book"></i> doc</span>
+          <span>${p.stack.join(" • ")}</span>
+        </div>
+      </div>
+    </div>
+  `;
+            }
+        )
+        .join("");
+
+    // Pagination controls
+    const pager = $("#documentationPagination");
+    if (pager) {
+        if (totalPages > 1) {
+            pager.innerHTML = `
+                <button class="iconBtn" id="prevDoc" ${currentPage === 0 ? "disabled" : ""}><i class="fa-solid fa-chevron-left"></i></button>
+                <span style="font-family:ui-monospace; font-size:0.9rem; color:var(--text-muted);">${currentPage + 1} / ${totalPages}</span>
+                <button class="iconBtn" id="nextDoc" ${currentPage >= totalPages - 1 ? "disabled" : ""}><i class="fa-solid fa-chevron-right"></i></button>
+            `;
+            $("#prevDoc").onclick = () => {
+                App.state.docPage--;
+                renderDocumentation();
+            };
+            $("#nextDoc").onclick = () => {
+                App.state.docPage++;
+                renderDocumentation();
+            };
+        } else {
+            pager.innerHTML = "";
+        }
+    }
+
+    $$(".pCard[data-doc-idx]", root).forEach((card) => {
+        const open = () => openDocModal(Number(card.dataset.docIdx));
+        card.addEventListener("click", open);
+        card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                open();
+            }
+        });
+    });
+}
+
+function renderCertifications(filter = null) {
+    if (filter) {
+        App.state.certFilter = filter;
+        App.state.certPage = 0;
+    }
+    const currentFilter = App.state.certFilter;
+    const currentPage = App.state.certPage;
+    const limit = 6;
+    const root = $("#certificationsGrid");
+    if (!root) return;
+
+    const list = App.data.certifications
+        .filter((c) => (currentFilter === "all" ? true : c.category === currentFilter));
+
+    const totalPages = Math.ceil(list.length / limit);
+    const visibleList = list.slice(currentPage * limit, (currentPage + 1) * limit);
+
+    root.innerHTML = visibleList
+        .map(
+            (p) => {
+                const idx = App.data.certifications.indexOf(p);
+                return `
+    <div class="pCard" data-cert-idx="${idx}" role="button" tabindex="0" aria-label="Open certification ${escapeHTML(
+                p.title
+            )}">
+      <div class="pCover" style="background-image:url('${p.cover}')">
+        <div class="pOverlay">
+          <div class="pStack">
+            ${p.stack
+                .slice(0, 3)
+                .map((s) => `<span class="stackChip">${escapeHTML(s)}</span>`)
+                .join("")}
+          </div>
+          <div class="stackChip"><i class="fa-solid fa-up-right-from-square"></i></div>
+        </div>
+      </div>
+      <div class="pBody">
+        <div class="pTitle">${escapeHTML(p.title)}</div>
+        <div class="pDesc">${escapeHTML(p.desc)}</div>
+        <div class="pFoot">
+          <span><i class="fa-solid fa-certificate"></i> certification</span>
+          <span>${p.stack.join(" • ")}</span>
+        </div>
+      </div>
+    </div>
+  `;
+            }
+        )
+        .join("");
+
+    // Pagination controls
+    const pager = $("#certificationsPagination");
+    if (pager) {
+        if (totalPages > 1) {
+            pager.innerHTML = `
+                <button class="iconBtn" id="prevCert" ${currentPage === 0 ? "disabled" : ""}><i class="fa-solid fa-chevron-left"></i></button>
+                <span style="font-family:ui-monospace; font-size:0.9rem; color:var(--text-muted);">${currentPage + 1} / ${totalPages}</span>
+                <button class="iconBtn" id="nextCert" ${currentPage >= totalPages - 1 ? "disabled" : ""}><i class="fa-solid fa-chevron-right"></i></button>
+            `;
+            $("#prevCert").onclick = () => {
+                App.state.certPage--;
+                renderCertifications();
+            };
+            $("#nextCert").onclick = () => {
+                App.state.certPage++;
+                renderCertifications();
+            };
+        } else {
+            pager.innerHTML = "";
+        }
+    }
+
+    $$(".pCard[data-cert-idx]", root).forEach((card) => {
+        const open = () => openCertModal(Number(card.dataset.certIdx));
+        card.addEventListener("click", open);
+        card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                open();
+            }
+        });
+    });
+}
+
+function renderVeille() {
+    const root = $("#veilleGrid");
+    if (!root) return;
+    root.innerHTML = App.data.veille
+        .map(
+            (p, idx) => `
+    <div class="pCard" data-veille-idx="${idx}" role="button" tabindex="0" aria-label="Open veille ${escapeHTML(
+                p.title
+            )}">
+      <div class="pCover" style="background-image:url('${p.cover}')">
+        <div class="pOverlay">
+          <div class="pStack">
+            ${p.stack
+                .slice(0, 3)
+                .map((s) => `<span class="stackChip">${escapeHTML(s)}</span>`)
+                .join("")}
+          </div>
+          <div class="stackChip"><i class="fa-solid fa-up-right-from-square"></i></div>
+        </div>
+      </div>
+      <div class="pBody">
+        <div class="pTitle">${escapeHTML(p.title)}</div>
+        <div class="pDesc">${escapeHTML(p.desc)}</div>
+        <div class="pFoot">
+          <span><i class="fa-solid fa-binoculars"></i> veille</span>
+          <span>${p.stack.join(" • ")}</span>
+        </div>
+      </div>
+    </div>
   `
         )
         .join("");
 
-    $$(".pCard", root).forEach((card) => {
-        const open = () => openProjectModal(Number(card.dataset.idx));
+    $$(".pCard[data-veille-idx]", root).forEach((card) => {
+        const open = () => openVeilleModal(Number(card.dataset.veilleIdx));
         card.addEventListener("click", open);
         card.addEventListener("keydown", (e) => {
             if (e.key === "Enter" || e.key === " ") {
@@ -584,7 +1315,106 @@ function openProjectModal(idx) {
     $("#modalWrap").classList.add("open");
     $("#modalWrap").setAttribute("aria-hidden", "false");
     App.state.modal = true;
-    toast("Opened", "Project case-study modal");
+    toast("Ouvert", "Détails sur le projet");
+}
+
+function openDocModal(idx) {
+    const p = App.data.documentation[idx];
+    if (!p) return;
+
+    $("#modalTitle").textContent = p.title;
+    $("#modalCover").style.backgroundImage = `url('${p.cover}')`;
+    $("#modalMeta").textContent = p.meta;
+    $("#modalDesc").textContent = p.desc;
+
+    $("#modalBullets").innerHTML = `
+    <ul class="bullets">
+      ${p.bullets.map((b) => `<li>${escapeHTML(b)}</li>`).join("")}
+    </ul>
+  `;
+
+    $("#modalLinks").innerHTML = p.links
+        .map(
+            (l) => `
+    <a class="btn secondary magnetic" href="${
+        l.href
+    }" target="_blank" rel="noopener">
+      <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
+    </a>
+  `
+        )
+        .join("");
+
+    $("#modalWrap").classList.add("open");
+    $("#modalWrap").setAttribute("aria-hidden", "false");
+    App.state.modal = true;
+    toast("Ouvert", "Détails sur la documentation");
+}
+
+function openCertModal(idx) {
+    const p = App.data.certifications[idx];
+    if (!p) return;
+
+    $("#modalTitle").textContent = p.title;
+    $("#modalCover").style.backgroundImage = `url('${p.cover}')`;
+    $("#modalMeta").textContent = p.meta;
+    $("#modalDesc").textContent = p.desc;
+
+    $("#modalBullets").innerHTML = `
+    <ul class="bullets">
+      ${p.bullets.map((b) => `<li>${escapeHTML(b)}</li>`).join("")}
+    </ul>
+  `;
+
+    $("#modalLinks").innerHTML = p.links
+        .map(
+            (l) => `
+    <a class="btn secondary magnetic" href="${
+        l.href
+    }" target="_blank" rel="noopener">
+      <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
+    </a>
+  `
+        )
+        .join("");
+
+    $("#modalWrap").classList.add("open");
+    $("#modalWrap").setAttribute("aria-hidden", "false");
+    App.state.modal = true;
+    toast("Ouvert", "Détails sur la certification");
+}
+
+function openVeilleModal(idx) {
+    const p = App.data.veille[idx];
+    if (!p) return;
+
+    $("#modalTitle").textContent = p.title;
+    $("#modalCover").style.backgroundImage = `url('${p.cover}')`;
+    $("#modalMeta").textContent = p.meta;
+    $("#modalDesc").textContent = p.desc;
+
+    $("#modalBullets").innerHTML = `
+    <ul class="bullets">
+      ${p.bullets.map((b) => `<li>${escapeHTML(b)}</li>`).join("")}
+    </ul>
+  `;
+
+    $("#modalLinks").innerHTML = p.links
+        .map(
+            (l) => `
+    <a class="btn secondary magnetic" href="${
+        l.href
+    }" target="_blank" rel="noopener">
+      <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
+    </a>
+  `
+        )
+        .join("");
+
+    $("#modalWrap").classList.add("open");
+    $("#modalWrap").setAttribute("aria-hidden", "false");
+    App.state.modal = true;
+    toast("Ouvert", "Détails sur la veille");
 }
 
 function closeModal() {
@@ -705,16 +1535,6 @@ $("#copySnippet").addEventListener("click", async () => {
 });
 
 /* ---------------- Form ---------------- */
-$("#contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    toast("Sent", "Message queued (demo). Add backend later.");
-    e.target.reset();
-});
-$("#clearForm").addEventListener("click", () => {
-    $("#contactForm").reset();
-    toast("Cleared", "Form cleared");
-});
-
 /* ---------------- Back to top + clock ---------------- */
 $("#backTop").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -786,12 +1606,48 @@ function initTilt() {
 
 /* ---------------- Skill filter buttons ---------------- */
 function initFilters() {
-    const btns = $$(".filterBtn");
+    const btns = $$("#skills .filterBtn");
     btns.forEach((b) => {
         b.addEventListener("click", () => {
             btns.forEach((x) => x.classList.remove("active"));
             b.classList.add("active");
             renderSkills(b.dataset.filter);
+            toast("Filter", b.textContent.trim());
+        });
+    });
+}
+
+function initCertFilters() {
+    const btns = $$("#certifications .filterBtn");
+    btns.forEach((b) => {
+        b.addEventListener("click", () => {
+            btns.forEach((x) => x.classList.remove("active"));
+            b.classList.add("active");
+            renderCertifications(b.dataset.filter);
+            toast("Filter", b.textContent.trim());
+        });
+    });
+}
+
+function initProjectFilters() {
+    const btns = $$("#projects .filterBtn");
+    btns.forEach((b) => {
+        b.addEventListener("click", () => {
+            btns.forEach((x) => x.classList.remove("active"));
+            b.classList.add("active");
+            renderProjects(b.dataset.filter);
+            toast("Filter", b.textContent.trim());
+        });
+    });
+}
+
+function initDocFilters() {
+    const btns = $$("#documentation .filterBtn");
+    btns.forEach((b) => {
+        b.addEventListener("click", () => {
+            btns.forEach((x) => x.classList.remove("active"));
+            b.classList.add("active");
+            renderDocumentation(b.dataset.filter);
             toast("Filter", b.textContent.trim());
         });
     });
@@ -840,13 +1696,21 @@ function initCanvasFX() {
     function resize() {
         dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
         w = c.width = Math.floor(window.innerWidth * dpr);
-        h = c.height = Math.floor(window.innerHeight * dpr);
+        
+        // Calculer la hauteur totale du document pour couvrir tout le contenu
+        const docH = Math.max(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight,
+            window.innerHeight
+        );
+        
+        h = c.height = Math.floor(docH * dpr);
         c.style.width = window.innerWidth + "px";
-        c.style.height = window.innerHeight + "px";
+        c.style.height = docH + "px";
         dots.length = 0;
 
         const count = Math.floor(
-            (window.innerWidth * window.innerHeight) / 28000
+            (window.innerWidth * docH) / 28000
         );
         for (let i = 0; i < count; i++) {
             dots.push(makeDot());
@@ -914,6 +1778,11 @@ function initCanvasFX() {
     }
 
     window.addEventListener("resize", resize);
+    
+    // Observer les changements de taille du contenu (ex: ouverture d'accordéons)
+    const ro = new ResizeObserver(() => resize());
+    ro.observe(document.body);
+
     resize();
     step();
 }
@@ -924,16 +1793,35 @@ function boot() {
     renderSkills("all");
     renderTimeline();
     renderProjects();
+    renderDocumentation();
+    renderCertifications();
+    renderVeille();
 
     initNameType();
     initScrollSpy();
     initFilters();
+    initDocFilters();
+    initCertFilters();
+    initProjectFilters();
     animateStats();
     initMagnetic();
     initTilt();
     initCanvasFX();
 
-    toast("Ready", "Portfolio loaded with micro-interactions");
+    // Correction du background : force le fond à être fixe et couvrir tout l'écran
+    // Cela évite qu'il se répète ou se coupe quand le contenu s'agrandit
+    const app = $(".app");
+    if (app) {
+        app.style.backgroundRepeat = "no-repeat";
+        app.style.backgroundAttachment = "fixed";
+        app.style.backgroundSize = "cover";
+        app.style.minHeight = "100vh";
+    }
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+    document.body.style.backgroundSize = "cover";
+
+    toast("Opérationnel", "Portfolio chargé avec succées");
 }
 
 boot();

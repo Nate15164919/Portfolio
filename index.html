@@ -33,6 +33,10 @@
                 ><i class="fa-solid fa-bolt"></i
                 ><span data-i18n="navSkills">Compétences</span></a
             >
+            <a class="navLink" href="#certifications" data-section="certifications"
+                ><i class="fa-solid fa-certificate"></i
+                ><span data-i18n="navCerts">Certifications</span></a
+            >
             <a class="navLink" href="#work" data-section="work"
                 ><i class="fa-solid fa-briefcase"></i
                 ><span data-i18n="navWork">Expérience</span></a
@@ -40,6 +44,14 @@
             <a class="navLink" href="#projects" data-section="projects"
                 ><i class="fa-solid fa-layer-group"></i
                 ><span data-i18n="navProjects">Projets</span></a
+            >
+            <a class="navLink" href="#documentation" data-section="documentation"
+                ><i class="fa-solid fa-book"></i
+                ><span data-i18n="navDocs">Docs</span></a
+            >
+            <a class="navLink" href="#veille" data-section="veille"
+                ><i class="fa-solid fa-binoculars"></i
+                ><span data-i18n="navVeille">Veille</span></a
             >
             <a class="navLink" href="#contact" data-section="contact"
                 ><i class="fa-solid fa-paper-plane"></i
@@ -87,6 +99,10 @@
                 ><i class="fa-solid fa-bolt"></i
                 ><span data-i18n="navSkills">Compétences</span></a
             >
+            <a class="drawerLink" href="#certifications"
+                ><i class="fa-solid fa-certificate"></i
+                ><span data-i18n="navCerts">Certifications</span></a
+            >
             <a class="drawerLink" href="#work"
                 ><i class="fa-solid fa-briefcase"></i
                 ><span data-i18n="navWork">Expérience</span></a
@@ -94,6 +110,14 @@
             <a class="drawerLink" href="#projects"
                 ><i class="fa-solid fa-layer-group"></i
                 ><span data-i18n="navProjects">Projets</span></a
+            >
+            <a class="drawerLink" href="#documentation"
+                ><i class="fa-solid fa-book"></i
+                ><span data-i18n="navDocs">Docs</span></a
+            >
+            <a class="drawerLink" href="#veille"
+                ><i class="fa-solid fa-binoculars"></i
+                ><span data-i18n="navVeille">Veille</span></a
             >
             <a class="drawerLink" href="#contact"
                 ><i class="fa-solid fa-paper-plane"></i
@@ -484,6 +508,28 @@
             <div class="pagination" id="skillsPagination" style="display:flex; justify-content:center; align-items:center; margin-top:20px; gap:15px;"></div>
         </section>
 
+        <!-- CERTIFICATIONS -->
+        <section class="section" id="certifications">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Certifications</span>
+                </div>
+                <h2 class="h2">
+                    <span>Mes Certifications</span>
+                </h2>
+            </div>
+
+            <div class="filters">
+                <button class="filterBtn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> Tout</button>
+                <button class="filterBtn" data-filter="network"><i class="fa-solid fa-network-wired"></i> Réseau</button>
+                <button class="filterBtn" data-filter="security"><i class="fa-solid fa-shield-halved"></i> Sécurité</button>
+            </div>
+
+            <div class="projectsGrid" id="certificationsGrid"></div>
+            <div class="pagination" id="certificationsPagination" style="display:flex; justify-content:center; align-items:center; margin-top:20px; gap:15px;"></div>
+        </section>
+
         <!-- WORK -->
         <section class="section" id="work">
             <div class="sectionHead">
@@ -520,7 +566,56 @@
                 </p>
             </div>
 
+            <div class="filters">
+                <button class="filterBtn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> Tout</button>
+                <button class="filterBtn" data-filter="atelier"><i class="fa-solid fa-briefcase"></i> Ateliers Pro</button>
+                <button class="filterBtn" data-filter="exercice"><i class="fa-solid fa-dumbbell"></i> Exercices</button>
+            </div>
+
             <div class="projectsGrid" id="projectsGrid"></div>
+            <div class="pagination" id="projectsPagination" style="display:flex; justify-content:center; align-items:center; margin-top:20px; gap:15px;"></div>
+        </section>
+
+        <!-- DOCUMENTATION -->
+        <section class="section" id="documentation">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Documentation</span>
+                </div>
+                <h2 class="h2">
+                    <span>Guides & Procédures</span>
+                </h2>
+                <p class="lead">
+                    Documentation technique, procédures d'installation et guides de configuration.
+                </p>
+            </div>
+
+            <div class="filters">
+                <button class="filterBtn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> Tout</button>
+                <button class="filterBtn" data-filter="linux"><i class="fa-brands fa-linux"></i> Linux</button>
+                <button class="filterBtn" data-filter="windows"><i class="fa-brands fa-windows"></i> Windows</button>
+            </div>
+
+            <div class="projectsGrid" id="documentationGrid"></div>
+            <div class="pagination" id="documentationPagination" style="display:flex; justify-content:center; align-items:center; margin-top:20px; gap:15px;"></div>
+        </section>
+
+        <!-- VEILLE TECH -->
+        <section class="section" id="veille">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-binoculars"></i>
+                    <span>Veille Technologique</span>
+                </div>
+                <h2 class="h2">
+                    <span>Ma Veille</span>
+                </h2>
+                <p class="lead">
+                    Sujet d'étude et de recherche continu sur les technologies émergentes et la sécurité.
+                </p>
+            </div>
+            <div class="projectsGrid" id="veilleGrid"></div>
         </section>
 
         <!-- CONTACT -->
@@ -532,12 +627,11 @@
                 </div>
                 <h2 class="h2">
                     <span data-i18n="contactTitle"
-                        >Let's build something sharp</span
+                        >Construisons quelque chose ensemble</span
                     >
                 </h2>
                 <p class="lead" data-i18n="contactLead">
-                    This demo form shows a success toast (no backend). Copy
-                    email quickly.
+                    Toutes les informations des contacts utile pour pouvoir m'envoyer un message ou me trouver sur les réseaux sociaux.
                 </p>
             </div>
 
@@ -555,7 +649,7 @@
                         <div class="infoBody">
                             <div class="infoLabel">Email</div>
                             <button class="linkBtn" id="emailBtn" type="button">
-                                ashish@example.com
+                                contact.pro@nathaniel-t.fr
                             </button>
                         </div>
                     </div>
@@ -566,10 +660,10 @@
                         </div>
                         <div class="infoBody">
                             <div class="infoLabel" data-i18n="locLabel">
-                                Location
+                                Localisation
                             </div>
                             <div class="infoText" data-i18n="locVal">
-                                Bengaluru, India
+                                Saint-Quentin en Yvelines, France
                             </div>
                         </div>
                     </div>
@@ -580,12 +674,12 @@
                         </div>
                         <div class="infoBody">
                             <div class="infoLabel" data-i18n="linksLabel">
-                                Links
+                                    Réseaux
                             </div>
                             <div class="miniLinks">
                                 <a
                                     class="miniA"
-                                    href="https://github.com/a2rp"
+                                    href="https://github.com/Nate15164919"
                                     target="_blank"
                                     rel="noopener"
                                     ><i class="fa-brands fa-github"></i
@@ -593,18 +687,11 @@
                                 >
                                 <a
                                     class="miniA"
-                                    href="https://www.linkedin.com/in/aashishranjan"
+                                    href="https://www.linkedin.com/in/user-546775j216756145547"
                                     target="_blank"
                                     rel="noopener"
                                     ><i class="fa-brands fa-linkedin"></i
                                     >LinkedIn</a
-                                >
-                                <a
-                                    class="miniA"
-                                    href="https://www.ashishranjan.net"
-                                    target="_blank"
-                                    rel="noopener"
-                                    ><i class="fa-solid fa-globe"></i>Site</a
                                 >
                             </div>
                         </div>
@@ -615,83 +702,29 @@
                     <div class="availability">
                         <div class="availabilityDot" aria-hidden="true"></div>
                         <span data-i18n="avail"
-                            >Open for: MVPs, dashboards, e-commerce,
-                            automation.</span
+                            >Ouvert à tout moment: Alternance de 2026-2027 3 semaines en entreprise et 1 semaine en formation.</span
                         >
                     </div>
                 </div>
 
-                <form class="card lift form" id="contactForm">
-                    <div class="cardTitle">
-                        <i class="fa-solid fa-pen-to-square"></i
-                        ><span data-i18n="formT">Send a message</span>
-                    </div>
-
-                    <div class="row2">
-                        <label class="field">
-                            <span class="label" data-i18n="fName">Name</span>
-                            <input
-                                class="input"
-                                name="name"
-                                placeholder="Your name"
-                                required
-                            />
-                        </label>
-                        <label class="field">
-                            <span class="label" data-i18n="fEmail">Email</span>
-                            <input
-                                class="input"
-                                type="email"
-                                name="email"
-                                placeholder="you@domain.com"
-                                required
-                            />
-                        </label>
-                    </div>
-
-                    <label class="field">
-                        <span class="label" data-i18n="fSubject">Subject</span>
-                        <input
-                            class="input"
-                            name="subject"
-                            placeholder="Project idea / requirement"
-                            required
-                        />
-                    </label>
-
-                    <label class="field">
-                        <span class="label" data-i18n="fMsg">Message</span>
-                        <textarea
-                            class="input area"
-                            name="message"
-                            rows="5"
-                            placeholder="Tell me what you want to build…"
-                            required
-                        ></textarea>
-                    </label>
-
-                    <div class="formActions">
-                        <button class="btn primary magnetic" type="submit">
-                            <i class="fa-solid fa-paper-plane"></i
-                            ><span data-i18n="send">Send</span>
-                        </button>
-                        <button
-                            class="btn ghost magnetic"
-                            type="button"
-                            id="clearForm"
-                        >
-                            <i class="fa-solid fa-eraser"></i
-                            ><span data-i18n="clear">Clear</span>
-                        </button>
-                    </div>
-                </form>
+                <div class="card lift" style="padding: 0; overflow: hidden; min-height: 450px;">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 450px;" 
+                        loading="lazy" 
+                        allowfullscreen 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://maps.google.com/maps?q=Saint-Quentin-en-Yvelines&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
             </div>
         </section>
 
         <footer class="footer">
             <div class="footLeft">
                 <span class="footBrand"
-                    ><i class="fa-solid fa-terminal"></i> NeonCraft</span
+                    ><i class="fa-solid fa-terminal"></i> Portfolio Nathaniel © 2026 </span
                 >
                 <span class="footDot">•</span>
                 <span id="clock">--</span>
