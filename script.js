@@ -18,6 +18,8 @@ const App = {
         active: "home",
         drawer: false,
         modal: false,
+        skillFilter: "all",
+        skillPage: 0,
     },
     data: {
         email: "contact.pro@nathaniel-t.fr",
@@ -59,7 +61,7 @@ Technicien programmeur`,
                 icon: "fa-brands fa-linux",
                 name: "Linux",
                 pct: 90,
-                tags: ["Ubuntu", "Kali", "Debian"],
+                tags: ["Ubuntu", "Kali", "Debian", "Bash", "Shell"],
             },
             {
                 group: "os",
@@ -139,6 +141,34 @@ Technicien programmeur`,
                 name: "Git",
                 pct: 92,
                 tags: ["Flow", "Reviews", "Releases"],
+            },
+            {
+                group: "dev",
+                icon: "fa-brands fa-windows",
+                name: "Powershell",
+                pct: 65,
+                tags: ["Automatisation", "Programmes", "Scripts"],
+            },
+            {
+                group: "dev",
+                icon: "fa-brands fa-wordpress",
+                name: "Wordpress",
+                pct: 95,
+                tags: ["Installation", "Pluggins", "Administration"],
+            },
+            {
+                group: "dev",
+                icon: "fa-solid fa-database",
+                name: "Base de données",
+                pct: 80,
+                tags: ["MySQL", "Nginx", "Administration", "PHP"],
+            },
+            {
+                group: "dev",
+                icon: "fa-solid fa-code",
+                name: "Base en programmation",
+                pct: 70,
+                tags: ["Python", "HTML/CSS", "Javascript", "JSON"],
             },
         ],
         timeline: [
@@ -331,11 +361,21 @@ async function copyText(text) {
 function renderSnippet() {
     $("#codeSnippet").textContent = App.data.snippet;
 }
-function renderSkills(filter = "all") {
+function renderSkills(filter = null) {
+    if (filter) {
+        App.state.skillFilter = filter;
+        App.state.skillPage = 0;
+    }
+    const currentFilter = App.state.skillFilter;
+    const currentPage = App.state.skillPage;
+    const limit = 9;
+
     const grid = $("#skillsGrid");
-    const list = App.data.skills.filter((s) =>
-        filter === "all" ? true : s.group === filter
+    const allSkills = App.data.skills.filter((s) =>
+        currentFilter === "all" ? true : s.group === currentFilter
     );
+    const totalPages = Math.ceil(allSkills.length / limit);
+    const list = allSkills.slice(currentPage * limit, (currentPage + 1) * limit);
 
     grid.innerHTML = list
         .map(
@@ -357,6 +397,28 @@ function renderSkills(filter = "all") {
   `
         )
         .join("");
+
+    // Pagination controls
+    const pager = $("#skillsPagination");
+    if (pager) {
+        if (totalPages > 1) {
+            pager.innerHTML = `
+                <button class="iconBtn" id="prevSkill" ${currentPage === 0 ? "disabled" : ""}><i class="fa-solid fa-chevron-left"></i></button>
+                <span style="font-family:ui-monospace; font-size:0.9rem; color:var(--text-muted);">${currentPage + 1} / ${totalPages}</span>
+                <button class="iconBtn" id="nextSkill" ${currentPage >= totalPages - 1 ? "disabled" : ""}><i class="fa-solid fa-chevron-right"></i></button>
+            `;
+            $("#prevSkill").onclick = () => {
+                App.state.skillPage--;
+                renderSkills();
+            };
+            $("#nextSkill").onclick = () => {
+                App.state.skillPage++;
+                renderSkills();
+            };
+        } else {
+            pager.innerHTML = "";
+        }
+    }
 
     // animate fills once in view
     const cards = $$(".skillCard", grid);

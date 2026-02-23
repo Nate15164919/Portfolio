@@ -536,25 +536,6 @@ body {
     gap: 14px;
     align-items: center;
 }
-.avatar {
-    width: 84px;
-    height: 84px;
-    border-radius: 22px;
-    background: radial-gradient(
-            circle at 30% 25%,
-            rgba(41, 255, 198, 0.45),
-            transparent 55%
-        ),
-        radial-gradient(
-            circle at 70% 75%,
-            rgba(124, 92, 255, 0.55),
-            transparent 60%
-        ),
-        url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=70");
-    background-size: cover;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: var(--shadow2);
-}
 .profileName {
     font-weight: 900;
     letter-spacing: -0.02em;
