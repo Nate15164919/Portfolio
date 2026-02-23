@@ -1738,7 +1738,7 @@ function initCanvasFX() {
         dots.length = 0;
 
         const count = Math.floor(
-            (window.innerWidth * docH) / 28000
+            (window.innerWidth * docH) / 60000
         );
         for (let i = 0; i < count; i++) {
             dots.push(makeDot());
@@ -1791,8 +1791,8 @@ function initCanvasFX() {
                     b = dots[j];
                 const dx = a.x - b.x,
                     dy = a.y - b.y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                if (dist < 160 * dpr) {
+                const distSq = dx * dx + dy * dy;
+                if (distSq < (160 * dpr) ** 2) {
                     ctx.lineWidth = 1 * dpr;
                     ctx.beginPath();
                     ctx.moveTo(a.x, a.y);
