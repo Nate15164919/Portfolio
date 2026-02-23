@@ -638,7 +638,7 @@ updateClock();
 
 /* ---------------- Resume button (demo) ---------------- */
 $("#openResume").addEventListener("click", () => {
-    toast("Resume", "Replace with your PDF link / drive link.");
+    window.open("FIles/Documents/CV-Nathaniel-T.pdf", "_blank");
 });
 
 /* ---------------- Magnetic buttons ---------------- */
