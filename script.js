@@ -223,52 +223,57 @@ Technicien programmeur`,
             {
                 title: "AP-1",
                 category: "atelier",
-                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
-                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
-                stack: ["React", "Node", "Mongo", "RBAC"],
-                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                desc: "Atelier de Professionnalisation 1 : Création d'un site web pour une exposition temporaire sur le Brutalisme.",
+                cover: "Projet/AP-1/bruta/images/home.jpg",
+                stack: ["HTML5", "CSS3", "Figma"],
+                meta: "",
                 bullets: [
-                    "Role-based access (packs) with clear permission boundaries.",
-                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
-                    "API layer centralized for easy future changes.",
+                    "Réalisé en équipe de 4 personnes, ce projet consistait à simuler la création de A à Z d'une entreprise spécialisée dans l'organisation d'expositions. Notre choix s'est porté sur la conception d'un événement immersif autour du brutalisme. Pendant que mes collaborateurs géraient la partie administrative, la documentation et la gestion de projet globale, j'ai pris en charge l'intégralité du volet digital.",
+                    "Mon rôle : Développeur Front-End J'ai conçu et développé le site web promotionnel dédié à cette exposition temporaire, avec pour objectif de donner un 'avant-goût' visuel et interactif de l'événement aux visiteurs.",
+                    "Réalisations : Intégration complète de l'interface à partir des maquettes Figma. Ce projet m'a permis d'appliquer les bonnes pratiques du développement Front-End, de respecter le design system initial et de consolider fortement mes bases techniques.",
+                    "Axes d'amélioration envisagés : Afin de faire évoluer ce projet, j'ai identifié deux axes de travail majeurs :",
+                    "Expérience Utilisateur (UX) : Optimisation du code CSS/JS pour corriger un bug de défilement (scroll) qui se bloque à certains endroits de la page.",
+                    "Développement Back-End : Création d'une base de données et développement de la logique serveur pour rendre le système de réservation fonctionnel (stockage des commandes et automatisation de l'envoi des billets par e-mail).",
                 ],
                 links: [
                     {
-                        label: "View (demo)",
+                        label: "Le projet",
                         icon: "fa-solid fa-arrow-up-right-from-square",
-                        href: "#",
+                        href: "https://portfolio.nathaniel-t.fr/Projet/AP-1/bruta/home.html",
                     },
                     {
                         label: "Code",
                         icon: "fa-brands fa-github",
-                        href: "https://github.com/a2rp",
+                        href: "https://github.com/Nate15164919/Portfolio/tree/main/Projet/AP-1/bruta",
                     },
                 ],
             },
             {
                 title: "AP-2",
                 category: "atelier",
-                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
-                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
-                stack: ["React", "Node", "Mongo", "RBAC"],
-                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                desc: "Atelier de Professionnalisation 2 :Étude théorique pour l'organisation 'Maison des Ligues de Lorraine' (M2L) ",
+                cover: "/FIles/Images/Projets/ap-2-back.jpg",
+                stack: ["Gestion de projet", "Communication technique", "Analyse de besoins"],
+                meta: "",
                 bullets: [
-                    "Role-based access (packs) with clear permission boundaries.",
-                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
-                    "API layer centralized for easy future changes.",
+                    "L'objectif était de répondre à deux problématiques techniques majeures en proposant un comparatif de trois solutions distinctes. Ce travail préparatoire visait à sélectionner la stratégie la plus pertinente en vue d'un déploiement réel sur infrastructure physique en deuxième année (AP3).",
+                    "Le projet avais pour but de choisir une solution pour les 2 problématiques suivantes : choisir un serveur DCHP et choisir une solution de supervision pour l'infrastructure réseau de la M2L.",
+                    "Ma contribution: J'ai mené une analyse approfondie des besoins et des contraintes techniques, en évaluant les différentes options disponibles pour répondre aux problématiques identifiées. J'ai ensuite synthétisé ces informations dans un comparatif clair et structuré, mettant en avant les avantages et les inconvénients de chaque solution.",
                 ],
-                links: [
-                    {
-                        label: "View (demo)",
-                        icon: "fa-solid fa-arrow-up-right-from-square",
-                        href: "#",
-                    },
-                    {
-                        label: "Code",
-                        icon: "fa-brands fa-github",
-                        href: "https://github.com/a2rp",
-                    },
-                ],
+                links: {
+                    "Solution DHCP": [
+                        { label: "Solution retenue (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-wds_final.pdf" },
+                        { label: "Ma solution (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-Windows-1.pdf" },
+                        { label: "DHCP Radius", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-Radius-1.pdf" },
+                        { label: "DHCP avec ISC", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCPisc-linux.pdf" },
+                    ],
+                    "Solution serveur de supervision": [
+                        { label: "Solution retenue (Zabbix)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-zabbix_final.pdf" },
+                        { label: "Ma solution (Nagios)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-nagios.pdf" },
+                        { label: "PRTG Network Monitor", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-docu-rptg.pdf" },
+                        { label: "Zabbix", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-zabbix.pdf" },
+                    ],
+                },
             },
             {
                 title: "AP-3",
@@ -1325,17 +1330,35 @@ function openProjectModal(idx) {
     </ul>
   `;
 
-    $("#modalLinks").innerHTML = p.links
-        .map(
-            (l) => `
-    <a class="btn secondary magnetic" href="${
-        l.href
-    }" target="_blank" rel="noopener">
-      <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
-    </a>
-  `
-        )
-        .join("");
+    if (Array.isArray(p.links)) {
+        $("#modalLinks").innerHTML = p.links
+            .map(
+                (l) => `
+        <a class="btn secondary magnetic" href="${
+            l.href
+        }" target="_blank" rel="noopener">
+          <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
+        </a>
+      `
+            )
+            .join("");
+    } else {
+        $("#modalLinks").innerHTML = Object.entries(p.links)
+            .map(
+                ([title, links]) => `
+        <div style="width:100%; margin-bottom:1rem;">
+            <h4 style="margin-bottom:0.5rem; color:var(--text-main); font-size:1rem;">${escapeHTML(title)}</h4>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                ${links.map(l => `
+                    <a class="btn secondary magnetic" href="${l.href}" target="_blank" rel="noopener">
+                        <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
+                    </a>
+                `).join("")}
+            </div>
+        </div>`
+            )
+            .join("");
+    }
 
     $("#modalWrap").classList.add("open");
     $("#modalWrap").setAttribute("aria-hidden", "false");
