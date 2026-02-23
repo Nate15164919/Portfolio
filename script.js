@@ -283,9 +283,9 @@ Technicien programmeur`,
                 stack: ["WireGuard", "SSH", "VPN", ""],
                 meta: "Rapport de projet • 2025",
                 bullets: [
-                    "Role-based access (packs) with clear permission boundaries.",
-                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
-                    "API layer centralized for easy future changes.",
+                    "",
+                    "",
+                    "",
                 ],
                 links: [
                     {
@@ -572,190 +572,30 @@ Technicien programmeur`,
 /*----------------- Certification  -----------------*/
         certifications: [
             {
-                title: "CCNA 1 - Introduction aux Réseaux",
+                title: "SC-900 - Microsoft Security, Compliance, and Identity Fundamentals",
                 category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
+                desc: "Microsoft • 2026",
+                cover: "FIles/Images/Docu/images.png",
+                stack: ["Azure", "Security", "Compliance"],
+                meta: "Fondamentaux de la sécurité, conformité et identité Microsoft.",
                 bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
+                    "Concepts de sécurité, conformité et identité dans le cloud.",
+                    "Services Microsoft liés à la sécurité et à la conformité.",
+                    "Gestion des identités et des accès avec Azure AD."
                 ],
                 links: [
                     {
-                        label: "Voir le badge",
+                        label: "Voir la certification",
                         icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "CCNA 1 - Introduction aux Réseaux",
-                category: "network",
-                desc: "Cisco Networking Academy - 2024",
-                cover: "https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Réseau", "Cisco", "Packet Tracer"],
-                meta: "Fondamentaux des réseaux et services IP.",
-                bullets: [
-                    "Architecture des réseaux et protocoles de communication.",
-                    "Configuration initiale des routeurs et commutateurs Cisco.",
-                    "Adressage IPv4 et IPv6, calcul de sous-réseaux."
-                ],
-                links: [
-                    {
-                        label: "Voir le badge",
-                        icon: "fa-solid fa-certificate",
-                        href: "#"
+                        href: ""
                     }
                 ]
             },
             {
                 title: "SecNumAcadémie",
                 category: "security",
-                desc: "ANSSI - 2025",
-                cover: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1400&q=70",
+                desc: "ANSSI • 2026",
+                cover: "FIles/Images/Docu/logo_anssi.png",
                 stack: ["Cybersécurité", "ANSSI", "MOOC"],
                 meta: "Sensibilisation à la sécurité des systèmes d'information.",
                 bullets: [
@@ -765,9 +605,149 @@ Technicien programmeur`,
                 ],
                 links: [
                     {
-                        label: "Attestation",
-                        icon: "fa-solid fa-file-pdf",
-                        href: "#"
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: ""
+                    }
+                ]
+            },
+            {
+                title: "Learn Python 3 Course",
+                category: "dev",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/python.png",
+                stack: ["Python", "Développement", "Boucle"],
+                meta: "Introduction aux concepts de base du langage Python.",
+                bullets: [
+                    "Variables, types de données et structures de contrôle.",
+                    "Fonctions et modules Python.",
+                    "Gestion des fichiers et des exceptions."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/python.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Learn SQL Course",
+                category: "dev",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/SQL-Products-Option-Light_v1_RE4xfAg.avif",
+                stack: ["SQL", "Base de données", "MariaDB"],
+                meta: "Introduction aux concepts de base du langage SQL.",
+                bullets: [
+                    "Création et gestion de bases de données relationnelles.",
+                    "Requêtes SQL de base (SELECT, INSERT, UPDATE, DELETE).",
+                    "Utilisation des contraintes et des clés étrangères."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/sql.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Learn HTML Course",
+                category: "dev",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/code2.avif",
+                stack: ["HTML", "Web", "Développement"],
+                meta: "Introduction aux concepts de base du langage HTML.",
+                bullets: [
+                    "Structure de base d'un document HTML.",
+                    "Utilisation des balises pour structurer le contenu.",
+                    "Création de liens et d'images dans un document HTML."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/html.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Learn the Command Line Course",
+                category: "dev",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/sudo.avif",
+                stack: ["Command Line", "Linux", "Bash"],
+                meta: "Introduction aux commandes de base du terminal Linux.",
+                bullets: [
+                    "Compréhension des commandes de base du terminal Linux.",
+                    "Utilisation des outils de navigation et d'exploration de fichiers.",
+                    "Gestion des permissions et des utilisateurs dans un environnement Linux."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/command.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Introduction To Ethical Hacking Course",
+                category: "security",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/ethichack.jpg",
+                stack: ["Cybersécurité", "Hacking", "Réseau"],
+                meta: "Introduction aux techniques d'ethical hacking et à la sécurité informatique.",
+                bullets: [
+                    "Compréhension des techniques d'ethical hacking.",
+                    "Identification des vulnérabilités dans les systèmes informatiques.",
+                    "Application de méthodes de protection et de défense contre les attaques."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/ethichack.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Introduction to Cybersecurity Course",
+                category: "security",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/cybersecu.jpg",
+                stack: ["Cybersécurité", "Réseau", "Système"],
+                meta: "Introduction aux concepts fondamentaux de la cybersécurité, y compris les menaces, les vulnérabilités et les meilleures pratiques pour protéger les systèmes d'information.",
+                bullets: [
+                    "Compréhension des concepts de base de la cybersécurité.",
+                    " Identification des différentes menaces et vulnérabilités.",
+                    "Application des bonnes pratiques de sécurité pour protéger les systèmes d'information."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/cyber.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Intro to Cloud Computing Course",
+                category: "network",
+                desc: "Codecademy • 2024",
+                cover: "FIles/Images/Docu/cloud.webp",
+                stack: ["Cloud", "Infrastructure", "Security"],
+                meta: "Introduction aux concepts de base du cloud computing.",
+                bullets: [
+                    "Compréhension des concepts de base du cloud computing.",
+                    "Identification des différents modèles de services cloud (IaaS, PaaS, SaaS).",
+                    "Analyse des avantages et des risques liés à l'utilisation du cloud."
+                ],
+                links: [
+                    {
+                        label: "Voir la certification",
+                        icon: "fa-solid fa-certificate",
+                        href: "FIles/Certifs/cloud.pdf"
                     }
                 ]
             }
@@ -1205,7 +1185,7 @@ function renderCertifications(filter = null) {
         <div class="pTitle">${escapeHTML(p.title)}</div>
         <div class="pDesc">${escapeHTML(p.desc)}</div>
         <div class="pFoot">
-          <span><i class="fa-solid fa-certificate"></i> certification</span>
+          <span><i class="fa-solid fa-certificate"></i></span>
           <span>${p.stack.join(" • ")}</span>
         </div>
       </div>
