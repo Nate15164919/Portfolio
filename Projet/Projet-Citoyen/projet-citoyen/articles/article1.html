@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script defer src="index.js"></script>
+    <title>Bravo Mobilité</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../assets/BMIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="montserrat">
+
+    <header class="w-full border-b border-zinc-300 bg-white fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center space-x-2">
+                <img src="../assets/BMIcon.png" alt="Logo" class="w-10 h-10" />
+                <span class="text-lg font-semibold"></span>
+            </div>
+            <nav class="space-x-6">
+                <a href="../index.html" class="text-lime-700 hover:text-lime-800 hover:underline transition-all">Acceuil</a>
+                <a href="../#Propos" class="text-gray-700 hover:text-black hover:underline transition-all">A Propos</a>
+                <a href="../#Articles" class="text-gray-700 hover:text-black hover:underline transition-all">Articles</a>
+                <a href="../#Témoignages"
+                    class="text-gray-700 hover:text-black hover:underline transition-all">Témoignage</a>
+                <a href="../#Contacts" class="text-gray-700 hover:text-black hover:underline transition-all">Contacts</a>
+            </nav>
+            <a href="" class="pointer-events-none text-white px-4 py-2 rounded-lg"></a>
+    </header>
+
+    <div class="w-full flex flex-col justify-center items-center pt-48 bg-[#EFF6F6] py-32">
+        <div class="max-w-[1000px] flex flex-col justify-center items-start">
+            <p class="px-2 py-1 text-[#236138] rounded-lg bg-[#D2F2D4] self-center text-center">Accessibilité</p>
+            <h1 class="text-6xl font-bold text-black leading-tight roboto pb-4">L'Accessibilité: Un Enjeu Majeur pour
+                l'Inclusion</h1>
+            <p class="text-xl text-zinc-500 pb-4">L'accessibilité, portée par la DIA et divers acteurs, vise à garantir
+                l'inclusion des personnes en situation de handicap.</p>
+            <a href="../index.html" class="text-[#2c7c57] hover:text-[#236138] text-lg text-start self-start">Retour à
+                la page d'acceuil</a>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-col justify-center items-center py-16 max-w-[1000px] mx-auto">
+        <div class="h-[400px] w-[1000px]">
+            <img src="https://alliance-sciences-societe.fr/wp-content/uploads/2020/11/image-accessibilite-signaletique-obligatoire-pmr-la.jpg"
+                alt="photo" class="object-cover w-full h-full rounded-lg">
+        </div>
+        <div class="flex gap-x-6 py-8 text-zinc-600 w-full border-b border-zinc-300 mb-8">
+            <div class="flex gap-x-1 items-center">
+                <i class="fa-regular fa-calendar"></i>
+                <p>19/03/2025</p>
+            </div>
+            <div class="flex gap-x-1 items-center">
+                <i class="fa-regular fa-user"></i>
+                <p>Lucie Pauthex</p>
+            </div>
+            <div class="flex gap-x-1 items-center">
+                <i class="fa-regular fa-clock"></i>
+                <p>4min de lecture</p>
+            </div>
+        </div>
+        <div class="text-start w-[80%]">
+            <h3 class="roboto text-xl pb-4">L'accessibilité est un élément clé pour garantir l'inclusion des
+                personnes en situation de handicap.</h3>
+            <p class="text-zinc-700 text-lg pb-8">De nombreux acteurs sont impliqués
+                dans cette démarche, notamment les entreprises de transports publics, les citoyens, les associations
+                (comme APF France Handicap et Handicap International),
+                les entreprises privées, l'État, les établissements scolaires et universitaires, ainsi que les
+                entreprises de technologies et d'innovations.
+                <br/> <br/> L'accessibilité numérique est un enjeu central, et des
+                solutions comme ARIA (Accessible Rich Internet Applications),
+                développée par le W3C, permettent d'améliorer l'expérience web des personnes en situation de handicap.
+                <br/> <br/> Grâce à des attributs spécifiques, ARIA facilite l'accessibilité des widgets JavaScript, des formulaires
+                et des mises à jour dynamiques de contenu.
+                <br/> <br/> La DIA (Délégation Interministérielle à l'Accessibilité), créée en 2022, joue un rôle essentiel dans
+                l'amélioration de l'accessibilité physique, numérique et téléphonique en France. Elle veille à
+                l'application des réglementations et collabore avec des entreprises, des associations et
+                l'administration publique.
+                <br/> <br/> Les Jeux Olympiques et Paralympiques de Paris 2024 ont accéléré cette dynamique, en favorisant des
+                initiatives comme l'adaptation des trottoirs, les annonces sonores aux arrêts de bus ou encore
+                l'audio-description. La DIA a également participé à une conférence en septembre 2024 pour soutenir des
+                start-ups innovantes dans ce domaine.
+                <br/> <br/> En partenariat avec la DINUM et la DGE, la DIA continue d'œuvrer pour un environnement toujours plus
+                accessible et inclusif.</p>
+        </div>
+        <div class="flex items-center justify-start text-start py-8 w-full gap-x-6 border-y border-zinc-300">
+            <i class="fa-regular fa-user p-6 rounded-full bg-zinc-200"></i>
+            <div class="flex flex-col justify-center items-start text-xl">
+                <h3 class="roboto font-bold">Lucie Pauthex</h3>
+                <p class="text-lg text-zinc-500">Journaliste indépendante</p>
+                <p class="text-lg text-zinc-700 pt-3">Etudiante et journaliste amateur.</p>
+            </div>
+        </div>
+        <div class="my-8 py-8 w-full bg-[#EFF6F6] rounded-xl">
+            <div class="flex flex-col justify-start items-center max-w-[333px] mx-auto">
+                <h3 class="roboto text-2xl font-bold pb-12">Abonnez-vous à la newsletter</h3>
+                <p class="text-zinc-600 pb-2 self-start">Votre email:</p>
+                <div class="w-full flex gap-x-2 items-center my-auto">
+                    <input type="mail" placeholder="Email..."
+                        class="rounded-lg bg-white outline py-2 outline-zinc-300 px-2 hover:outline-zinc-500 focus:outline-zinc-600 self-start">
+                    <a href="#" class="bg-[#236138] text-white px-4 py-2 rounded-lg ">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-6 border-t border-zinc-300 w-full flex justify-center flex-col items-center gap-y-3 text-lg">
+        <ul class="flex gap-x-4">
+            <li><a href="#">Mentions légales</a></li>
+            <li></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li></li>
+            <li><a href="#">Conditions générales d'utilisation</a></li>
+            <li></li>
+            <li><a href="#">Charte légale</a></li>
+        </ul>
+        <h3 class="roboto pt-6">Sources:</h3>
+        <div class="flex gap-x-6">
+            <a href="https://www.info.gouv.fr/actualite/handicap-pour-une-societe-inclusive?"
+                class="text-[#2c7c57] hover:text-[#236138] underline">gouv.fr</a>
+            <a href="https://www.ecologie.gouv.fr/politiques-publiques/laccessibilite-voirie-espaces-publics"
+                class="text-[#2c7c57] hover:text-[#236138] underline">ecogouv.fr</a>
+            <a href="https://www.handicap-parlons-en.com/quelles-aides-financieres-pour-une-maison-habilitee-pmr.html"
+                class="text-[#2c7c57] hover:text-[#236138] underline">handicap-parlons-en.com</a>
+            <a href="https://www.ville-plaisir.fr/services/solidarites-seniors/handicap/aides-a-la-mobilite"
+                class="text-[#2c7c57] hover:text-[#236138] underline">ville-plaisir.fr</a>
+            <a href="https://handicap.gouv.fr/la-delegation-interministerielle-laccessibilite-dia"
+                class="text-[#2c7c57] hover:text-[#236138] underline">hadicap.gouv.fr</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

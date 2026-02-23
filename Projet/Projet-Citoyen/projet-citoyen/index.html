@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script defer src="index.js"></script>
+    <title>Bravo Mobilité</title>
+    <link rel="icon" href="assets/BMIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="montserrat pointer-events-none">
+
+    <header class="w-full border-b border-zinc-300 bg-white fixed top-0 left-0 w-full z-50 pointer-events-auto">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center space-x-2">
+                <img src="assets/BMIcon.png" alt="Logo" class="w-10 h-10" />
+                <span class="text-lg font-semibold"></span>
+            </div>
+            <nav class="space-x-6">
+                <a href="#" class="text-lime-700 hover:text-lime-800 hover:underline transition-all">Acceuil</a>
+                <a href="#Propos" class="text-gray-700 hover:text-black hover:underline transition-all">A Propos</a>
+                <a href="#Articles" class="text-gray-700 hover:text-black hover:underline transition-all">Articles</a>
+                <a href="#Témoignages"
+                    class="text-gray-700 hover:text-black hover:underline transition-all">Témoignage</a>
+                <a href="#Contacts" class="text-gray-700 hover:text-black hover:underline transition-all">Contacts</a>
+            </nav>
+            <a href="" class="pointer-events-none text-white px-4 py-2 rounded-lg"></a>
+    </header>
+
+    <!-- Présentation -->
+    <div class="pt-48 py-32 px-16 relative -z-10 translate-on-y">
+        <img src="assets/presBG.jpg" alt="" class="absolute inset-0 object-cover w-full h-full -z-50">
+        <div class="mx-auto flex items-center justify-between">
+            <div class="w-2/3">
+                <h1 class="text-6xl font-bold text-white leading-tight roboto">Bravo Mobilité
+                </h1>
+                <p class="mt-4 text-xl text-zinc-300">La liberté de bouger pour tous !</p>
+            </div>
+            <div class="pr-24 flex justify-center">
+                <img src="assets/BMLogo.png" alt="LOGO" class="h-48 rounded-lg mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <!-- Qui sommes nous -->
+    <div id="Propos" class="w-full flex flex-col bg-white justify-center items-center gap-y-4 text-center py-16 z-20">
+        <p class="px-2 py-1 text-[#236138] rounded-lg bg-[#E6F4E7]">À Propos de nous</p>
+        <h1 class="font-bold text-6xl roboto">Qui Sommes Nous</h1>
+        <p class="text-zinc-500 lg:w-[900px] pt-4 text-xl">Nous sommes une initiative engagée pour promouvoir
+            l'accessibilité des lieux publiques aux personnes à mobilité réduite (PMR). Notre objectif est de
+            sensibiliser et informer les acteurs publics et privés dans l'amélioration de l'accessibilité en Île-de-France.</p>
+        <div
+            class="grid grid-cols-2 flex justify-center items-center text-start lg:w-[1300px] pt-8 text-xl lg:h-[500px]">
+            <div class="w-[90%] flex flex-col justify-center items-center gap-y-8">
+                <div class="flex flex-col justify-center gap-y-1">
+                    <h3 class="font-bold text-2xl">Notre mission</h3>
+                    <p class="text-zinc-500">Informer sur l'accessibilité des lieux publics et des transports pour les personnes à mobilité réduite (PMR). À travers nos articles, nous analysons les obstacles, mettons en avant les initiatives positives et proposons des solutions pour une société plus inclusive. </p>
+                </div>
+                <div class="flex flex-col justify-center gap-y-1">
+                    <h3 class="font-bold text-2xl">Notre vision</h3>
+                    <p class="text-zinc-500">Un monde où tous les lieux publics et les transports sont accessibles, permettant à chacun de se déplacer librement et en toute autonomie. </p>
+                </div>
+                <div class="flex flex-col justify-center gap-y-1">
+                    <h3 class="font-bold text-2xl">Nos valeurs</h3>
+                    <p class="text-zinc-500">Inclusion : Sensibiliser et informer pour encourager des aménagements adaptés à tous. <br>
+                        Solidarité : Relayer les témoignages et expériences des usagers pour faire entendre leur voix.
+
+                </div>
+            </div>
+            <div class="lg:w-[450px] lg:h-[450px] h-[300px] w-[300px] mx-auto flex justify-center items-center">
+                <img src="https://formations-aux-premiers-secours.com/wp-content/uploads/2018/11/Manipulation-PMR-2.jpg"
+                    alt="Photo PMR" class="object-cover w-full h-full rounded-xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- Partie Article -->
+    <div id="Articles"
+        class="bg-[#EFF6F6] w-full flex flex-col justify-center items-center py-16 pb-24 gap-y-4 text-center z-20">
+        <p class="px-2 py-1 text-[#236138] rounded-lg bg-[#D2F2D4]">Articles</p>
+        <h1 class="font-bold text-6xl roboto">Nos Derniers Articles</h1>
+        <p class="text-zinc-500 lg:w-[900px] pt-4 text-xl">Retrouvez nos derniers articles et actualités sur
+            l'accessibilité des lieux publiques sur notre site et restez informés de nos actions en faveur d'une
+            mobilité inclusive !</p>
+        <div class="w-[1200px] grid grid-cols-3 justify-center items-center gap-x-4 pt-8 text-start">
+            <div class="rounded-xl shadow-sm flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <p class="rounded-lg bg-[#2c7c57] text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-newspaper"></i></p>
+                <h3 class="text-2xl font-bold pt-4 roboto">L'Accessibilité: Un Enjeu Majeur pour
+                    l'Inclusion</h3>
+                <p class="text-xl text-zinc-500">L'accessibilité, portée par la DIA et divers acteurs...</p>
+                <a href="articles/article1.html"
+                    class="text-[#2c7c57] hover:text-[#236138] text-xl pointer-events-auto">Lire l'article -></a>
+            </div>
+            <div class="rounded-xl shadow-sm flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <p class="rounded-lg bg-[#2c7c57] text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-newspaper"></i></p>
+                <h3 class="text-2xl font-bold pt-4 roboto">Les transports en commun à Paris</h3>
+                <p class="text-xl text-zinc-500">L'accessibilité des transports en commun est
+                    essentielle pour...</p>
+                <a href="articles/article2.html"
+                    class="text-[#2c7c57] hover:text-[#236138] text-xl pointer-events-auto">Lire l'article -></a>
+            </div>
+            <div class="rounded-xl shadow-sm flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <p class="rounded-lg bg-[#4c9589] text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-newspaper"></i></p>
+                <h3 class="text-2xl font-bold pt-4 roboto">Handicap et inclusion</h3>
+                <p class="text-xl text-zinc-500">Les personnes en situation de handicap font face à de nombreuses discriminations...</p>
+                <a href="articles/article3.html"
+                    class="text-[#2c7c57] hover:text-[#236138] text-xl pointer-events-auto">Lire l'article -></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partie Témoignage -->
+    <div id="Témoignages" class="w-full flex flex-col justify-center items-center gap-y-4 text-center py-16 z-20">
+        <p class="px-2 py-1 text-[#236138] rounded-lg bg-[#E6F4E7]">Témoignages</p>
+        <h1 class="font-bold text-6xl roboto">Ce qu'ils disent de nous</h1>
+        <p class="text-zinc-500 lg:w-[900px] pt-4 text-xl">Découvrez ce que nos membres et sympathisants pensent de notre action et de notre site !</p>
+        <div
+            class="grid grid-cols-3 flex justify-center items-center text-start lg:w-[1300px] text-xl pt-2 lg:h-[400px]">
+            <div class="border-b border-zinc-300 flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <div class="flex gap-x-4 justify-start items-center">
+                    <img src="https://media.ouest-france.fr/v1/pictures/7a655843815ccefc028baef2d10b3cde-9264128.jpg?width=1400&client_id=eds&sign=1ad3e5382208635d57af0cd86c36b5199c111cb0df8621ceee51d254c59c46fd"
+                        alt="pp" class="h-12 w-12 object-cover rounded-full">
+                    <div class="flex flex-col justify-center items-start gap-y-2">
+                        <h3 class="roboto">Maître Gims</h3>
+                        <p class="text-zinc-500">Conspirationniste</p>
+                    </div>
+                </div>
+                <p class="text-xl text-zinc-600">"Une équipe engagée et réactive ! Ils font un travail remarquable pour améliorer l'accessibilité des transports. Merci pour votre combat et votre soutien aux PMR."</p>
+            </div>
+            <div class="border-b border-zinc-300 flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <div class="flex gap-x-4 justify-start items-center">
+                    <img src="https://yt3.ggpht.com/a/AGF-l79WOYXn6EHI8La7L_rMrYgEk2tLcv8SqKqc=s900-c-k-c0xffffffff-no-rj-mo"
+                        alt="pp" class="h-12 w-12 object-cover rounded-full">
+                    <div class="flex flex-col justify-center items-start gap-y-2">
+                        <h3 class="roboto">El Chiki</h3>
+                        <p class="text-zinc-500">Vidéaste Clash of Clan</p>
+                    </div>
+                </div>
+                <p class="text-xl text-zinc-600">"J'ai découvert cette association récemment et je suis impressionnée par leur mobilisation. Leurs articles sont clairs et très utiles pour savoir quelles stations et lignes sont adaptées !"</p>
+            </div>
+            <div class="border-b border-zinc-300 flex flex-col p-4 bg-white max-w-96 gap-y-4">
+                <div class="flex gap-x-4 justify-start items-center">
+                    <img src="https://avatars.githubusercontent.com/u/37090407?v=4" alt="pp"
+                        class="h-12 w-12 object-cover rounded-full">
+                    <div class="flex flex-col justify-center items-start gap-y-2">
+                        <h3 class="roboto">Romain Jalabert</h3>
+                        <p class="text-zinc-500">Développeur Web</p>
+                    </div>
+                </div>
+                <p class="text-xl text-zinc-600">"En tant que développeur, je trouve que le site est bien structuré avec un HTML propre et un CSS optimisé. La navigation est fluide, et l'accessibilité semble bien prise en compte, ce qui est essentiel pour un sujet comme celui-ci. Bravo pour cette belle réalisation !"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    <div id="Contacts"
+        class="bg-[#EFF6F6] w-full flex flex-col justify-center items-center py-16 pb-24 gap-y-4 text-center z-20">
+        <p class="px-2 py-1 text-[#236138] rounded-lg bg-[#D2F2D4]">Contact</p>
+        <h1 class="Roboto text-6xl font-bold mt-4">Contactez-nous</h1>
+        <p class="text-zinc-500 text-xl mt-2">Vous avez des questions ou souhaitez nous transmettre des informations ? Contactez-nous dès aujourd'hui !</p>
+        <div class="mt-8 space-y-8">
+            <div class="flex items-center space-x-6">
+                <div class="bg-[#236138] text-white p-4 rounded-lg flex items-center justify-center w-12 h-12">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="Roboto font-bold text-2xl ">Notre adresse</h3>
+                    <p class="text-xl text-zinc-500">8 Rue Germain soufflot, Montigny-Le-Bretonneux, 78180</p>
+                </div>
+            </div>
+            <a href="mailto:contact@bravo-mobilite.fr"
+                class="flex items-center space-x-6 text-black hover:text-[#2c7c57] pointer-events-auto">
+                <div class="bg-[#2c7c57] text-white p-4 rounded-lg flex items-center justify-center w-12 h-12">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="Roboto font-bold text-2xl ">Email</h3>
+                    <p class="text-xl text-zinc-500">contact@bravo-mobilite.fr</p>
+                </div>
+            </a>
+            <a href="tel:+0607060706"
+                class="flex items-center space-x-6 text-black  hover:text-[#4c9589] pointer-events-auto">
+                <div class="bg-[#4c9589] text-white p-4 rounded-lg flex items-center justify-center w-12 h-12">
+                    <i class="fas fa-phone text-2xl"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="Roboto font-bold text-2xl ">Téléphone</h3>
+                    <p class="text-xl text-zinc-500">+33 6 07 06 07 06</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer class="py-6 border-t border-zinc-300 w-full flex justify-center flex-col items-center gap-y-3 text-lg z-20">
+        <ul class="flex gap-x-4">
+            <li><a href="#" class="pointer-events-auto">Mentions légales</a></li>
+            <li></li>
+            <li><a href="#" class="pointer-events-auto">Politique de confidentialité</a></li>
+            <li></li>
+            <li><a href="#" class="pointer-events-auto">Conditions générales d'utilisation</a></li>
+            <li></li>
+            <li><a href="#" class="pointer-events-auto">Charte légale</a></li>
+        </ul>
+        <h3 class="roboto pt-6">Sources:</h3>
+        <div class="flex gap-x-6">
+            <a href="https://www.info.gouv.fr/actualite/handicap-pour-une-societe-inclusive?"
+                class="text-[#2c7c57] hover:text-[#236138] underline pointer-events-auto">gouv.fr</a>
+            <a href="https://www.ecologie.gouv.fr/politiques-publiques/laccessibilite-voirie-espaces-publics"
+                class="text-[#2c7c57] hover:text-[#236138] underline pointer-events-auto">ecogouv.fr</a>
+            <a href="https://www.handicap-parlons-en.com/quelles-aides-financieres-pour-une-maison-habilitee-pmr.html"
+                class="text-[#2c7c57] hover:text-[#236138] underline pointer-events-auto">handicap-parlons-en.com</a>
+            <a href="https://www.ville-plaisir.fr/services/solidarites-seniors/handicap/aides-a-la-mobilite"
+                class="text-[#2c7c57] hover:text-[#236138] underline pointer-events-auto">ville-plaisir.fr</a>
+            <a href="https://handicap.gouv.fr/la-delegation-interministerielle-laccessibilite-dia"
+                class="text-[#2c7c57] hover:text-[#236138] underline pointer-events-auto">hadicap.gouv.fr</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
