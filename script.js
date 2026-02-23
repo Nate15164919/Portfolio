@@ -21,15 +21,38 @@ const App = {
     },
     data: {
         email: "contact.pro@nathaniel-t.fr",
-        snippet: `// Build rules (non-negotiable)
-const ship = (feature) => ({
-  fast: true,
-  cleanUI: true,
-  edgeCases: "handled",
-  performance: "measured",
-  maintainable: "always",
-  feature
-});`,
+        snippet: `Option SISR
+L’option Solution d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et équipements informatiques 
+(installation, maintenance, sécurité). 
+En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
+
+Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de : 
+
+Administrateur systèmes et réseaux
+Informaticien support et déploiement
+Pilote d’exploitation
+Support systèmes et réseaux
+Technicien d’infrastructure
+Technicien de production
+Technicien micro et réseaux
+
+Option SLAM
+L’option Solutions Logicielles et Applications métiers forme des spécialistes des logiciels 
+(rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+En sortant d’un BTS SIO SLAM, vous serez capables de concevoir, de développer et de déployer des solutions applicatives 
+personnalisées tout en assurant leur maintenance corrective et évolutive.
+
+Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de : 
+
+Développeur d’applications informatiques
+Développeur informatique
+Analyste d’applications ou d’études
+Analyste programmeur
+Programmeur analyste
+Programmeur d’applications
+Responsable des services applicatifs
+Technicien d’études informatiques
+Technicien programmeur`,
         skills: [
             {
                 group: "frontend",
