@@ -15,14 +15,12 @@ const $$ = (q, root = document) => [...root.querySelectorAll(q)];
 
 const App = {
     state: {
-        theme: "dark",
-        lang: "en",
         active: "home",
         drawer: false,
         modal: false,
     },
     data: {
-        email: "ashish@example.com",
+        email: "contact.pro@nathaniel-t.fr",
         snippet: `// Build rules (non-negotiable)
 const ship = (feature) => ({
   fast: true,
@@ -101,9 +99,9 @@ const ship = (feature) => ({
         ],
         timeline: [
             {
-                role: "Full Stack Developer",
-                org: "ABIR Networks",
-                period: "2023 - Present",
+                role: "Administrateur Système et Réseau",
+                org: "Actuellement en recherche",
+                period: "2026 - 2027",
                 icon: "fa-solid fa-briefcase",
                 bullets: [
                     "Built MERN dashboards and internal tools with clean role-based access patterns.",
@@ -112,9 +110,9 @@ const ship = (feature) => ({
                 ],
             },
             {
-                role: "Freelance Developer",
-                org: "Client Projects",
-                period: "2018 - 2023",
+                role: "Technicien Système et Réseau",
+                org: "Tertio Engineering",
+                period: "Janvier - Mars 2026 | STAGE",
                 icon: "fa-solid fa-rocket",
                 bullets: [
                     "Shipped multi-page websites and product prototypes (admin panels, e-commerce, booking).",
@@ -123,9 +121,9 @@ const ship = (feature) => ({
                 ],
             },
             {
-                role: "Web Developer",
-                org: "Early Career",
-                period: "2016 - 2018",
+                role: "Technicien Support Informatique",
+                org: "Tertio Engineering",
+                period: "Avril - Juin 2025 | STAGE",
                 icon: "fa-solid fa-code",
                 bullets: [
                     "Built responsive websites with strong HTML/CSS fundamentals.",
@@ -184,6 +182,30 @@ const ship = (feature) => ({
                 ],
             },
             {
+                title: "Payments + Orders Flow",
+                desc: "Checkout UX with receipts, status tracking, and clean form validation patterns.",
+                cover: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=70",
+                stack: ["React", "Express", "Stripe"],
+                meta: "Focus: UX + correctness • Outcome: clean purchase flow",
+                bullets: [
+                    "Careful error states: retry, cancel, and pending scenarios.",
+                    "Fast feedback loops: toasts + micro animations.",
+                    "Receipt-friendly layout and print readiness.",
+                ],
+                links: [
+                    {
+                        label: "Case study",
+                        icon: "fa-solid fa-book-open",
+                        href: "#",
+                    },
+                    {
+                        label: "GitHub",
+                        icon: "fa-brands fa-github",
+                        href: "https://github.com/a2rp",
+                    },
+                ],
+            },
+            {
                 title: "Portfolio System (This Pen)",
                 desc: "Theme + EN/HI toggle, scroll spy, modal case studies, particles, and magnetic UI.",
                 cover: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1400&q=70",
@@ -210,184 +232,6 @@ const ship = (feature) => ({
         ],
     },
 };
-
-/* ---------------- i18n (EN/HI) ---------------- */
-const dict = {
-    en: {
-        brandSub: "Full-Stack Dev",
-        navHome: "Home",
-        navAbout: "About",
-        navSkills: "Skills",
-        navWork: "Work",
-        navProjects: "Projects",
-        navContact: "Contact",
-        drawerTitle: "Quick Nav",
-        drawerTipTitle: "Pro Tip",
-        drawerTipText: "Tap a project card to open the case-study modal.",
-        heroPill: "Available for freelance + product builds",
-        heroHi: "Hi, I'm",
-        heroSub:
-            "I build fast, premium web apps - clean UI, sharp UX, and reliable backend. Obsessed with performance & polish.",
-        ctaProjects: "Explore Projects",
-        ctaCopyEmail: "Copy Email",
-        ctaTalk: "Let's Talk",
-        metaTitle1: "Performance",
-        metaText1: "Core Web Vitals focused builds",
-        metaTitle2: "Security",
-        metaText2: "Auth, RBAC, secure patterns",
-        metaTitle3: "Design",
-        metaText3: "Micro-interactions + crisp UI",
-        profileRole: "Full-Stack • MERN • UI Engineering",
-        stat1: "Projects shipped",
-        stat2: "Years building",
-        stat3: "Clients helped",
-        mini1: "MERN apps + dashboards",
-        mini2: "Payments, auth, admin panels",
-        mini3: "Performance + clean architecture",
-        hireBtn: "Hire Me",
-        resumeBtn: "Resume",
-        hintText: "Hover cards - subtle tilt + glow. Tap projects for details.",
-        scrollDown: "Scroll",
-        aboutKicker: "About",
-        aboutTitle: "Engineering with taste",
-        aboutLead:
-            "I love building products that feel expensive: crisp typography, strong spacing, meaningful motion, and robust code.",
-        aboutCard1T: "Product mindset",
-        aboutCard1D:
-            "I don't just 'code screens'. I ship flows: onboarding, auth, payments, admin, edge-cases.",
-        aboutMini1: "Clean UX",
-        aboutMini2: "Fast UI",
-        aboutMini3: "Maintainable",
-        aboutCard2T: "Stack comfort",
-        codeTitle: "Today's build philosophy",
-        copySnippet: "Copy snippet",
-        skillsKicker: "Skills",
-        skillsTitle: "Tools I use to win deadlines",
-        skillsLead:
-            "Filter skills, hover chips, and watch the bars animate in view.",
-        fAll: "All",
-        fFront: "Frontend",
-        fBack: "Backend",
-        fTools: "Tools",
-        workKicker: "Work",
-        workTitle: "Experience timeline",
-        workLead: "Expandable items. Click to open and read impact bullets.",
-        projectsKicker: "Projects",
-        projectsTitle: "Case-studies (tap to open)",
-        projectsLead:
-            "Each card opens a modal: goals, stack, highlights, and links.",
-        contactKicker: "Contact",
-        contactTitle: "Let's build something sharp",
-        contactLead:
-            "This demo form shows a success toast (no backend). Copy email quickly.",
-        contactCardT: "Details",
-        locLabel: "Location",
-        locVal: "Bengaluru, India",
-        linksLabel: "Links",
-        avail: "Open for: MVPs, dashboards, e-commerce, automation.",
-        formT: "Send a message",
-        fName: "Name",
-        fEmail: "Email",
-        fSubject: "Subject",
-        fMsg: "Message",
-        send: "Send",
-        clear: "Clear",
-        backTop: "Top",
-    },
-    hi: {
-        brandSub: "Full-Stack Dev",
-        navHome: "Home",
-        navAbout: "About",
-        navSkills: "Skills",
-        navWork: "Work",
-        navProjects: "Projects",
-        navContact: "Contact",
-        drawerTitle: "Quick Nav",
-        drawerTipTitle: "Pro Tip",
-        drawerTipText:
-            "Project card pe tap karo - case-study modal khul jayega.",
-        heroPill: "Freelance + product builds ke liye available",
-        heroHi: "Hi, main hoon",
-        heroSub:
-            "Main fast, premium web apps banata hoon - clean UI, sharp UX, aur reliable backend. Performance + polish mera obsession hai.",
-        ctaProjects: "Projects Dekho",
-        ctaCopyEmail: "Email Copy",
-        ctaTalk: "Baat Karein",
-        metaTitle1: "Performance",
-        metaText1: "Core Web Vitals focused builds",
-        metaTitle2: "Security",
-        metaText2: "Auth, RBAC, secure patterns",
-        metaTitle3: "Design",
-        metaText3: "Micro-interactions + crisp UI",
-        profileRole: "Full-Stack • MERN • UI Engineering",
-        stat1: "Projects shipped",
-        stat2: "Years building",
-        stat3: "Clients helped",
-        mini1: "MERN apps + dashboards",
-        mini2: "Payments, auth, admin panels",
-        mini3: "Performance + clean architecture",
-        hireBtn: "Hire Me",
-        resumeBtn: "Resume",
-        hintText:
-            "Cards hover karo - subtle tilt + glow. Projects tap karo for details.",
-        scrollDown: "Scroll",
-        aboutKicker: "About",
-        aboutTitle: "Engineering with taste",
-        aboutLead:
-            "Mujhe aise products banana pasand hai jo ‘expensive' feel karein: typography, spacing, motion, aur robust code.",
-        aboutCard1T: "Product mindset",
-        aboutCard1D:
-            "Main sirf 'screens' nahi banata. Main flows ship karta hoon: onboarding, auth, payments, admin, edge-cases.",
-        aboutMini1: "Clean UX",
-        aboutMini2: "Fast UI",
-        aboutMini3: "Maintainable",
-        aboutCard2T: "Stack comfort",
-        codeTitle: "Aaj ka build philosophy",
-        copySnippet: "Copy snippet",
-        skillsKicker: "Skills",
-        skillsTitle: "Tools jisse deadlines jeet jata hoon",
-        skillsLead:
-            "Skills filter karo, chips hover karo, aur bars ko animate hote dekho.",
-        fAll: "All",
-        fFront: "Frontend",
-        fBack: "Backend",
-        fTools: "Tools",
-        workKicker: "Work",
-        workTitle: "Experience timeline",
-        workLead: "Expandable items. Click karo aur impact bullets padho.",
-        projectsKicker: "Projects",
-        projectsTitle: "Case-studies (tap to open)",
-        projectsLead:
-            "Har card modal open karta hai: goals, stack, highlights, links.",
-        contactKicker: "Contact",
-        contactTitle: "Chalo kuch sharp banate hain",
-        contactLead:
-            "Yeh demo form toast dikhata hai (backend nahi). Email quickly copy karo.",
-        contactCardT: "Details",
-        locLabel: "Location",
-        locVal: "Bengaluru, India",
-        linksLabel: "Links",
-        avail: "Open for: MVPs, dashboards, e-commerce, automation.",
-        formT: "Message bhejo",
-        fName: "Name",
-        fEmail: "Email",
-        fSubject: "Subject",
-        fMsg: "Message",
-        send: "Send",
-        clear: "Clear",
-        backTop: "Top",
-    },
-};
-
-function applyI18n() {
-    const lang = App.state.lang;
-    const nodes = $$("[data-i18n]");
-    nodes.forEach((n) => {
-        const k = n.getAttribute("data-i18n");
-        if (dict[lang] && dict[lang][k]) n.textContent = dict[lang][k];
-    });
-}
-
 /* ---------------- UI helpers ---------------- */
 function toast(title, msg) {
     const wrap = $("#toasts");
@@ -705,34 +549,6 @@ function initScrollSpy() {
     });
 }
 
-/* ---------------- Theme + Language ---------------- */
-function setTheme(theme) {
-    App.state.theme = theme;
-    $(".app").setAttribute("data-theme", theme);
-    localStorage.setItem("nc_theme", theme);
-    $("#themeIcon").className =
-        theme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon";
-    toast(
-        "Theme",
-        theme === "dark" ? "Dark mode enabled" : "Light mode enabled"
-    );
-}
-$("#themeBtn").addEventListener("click", () => {
-    setTheme(App.state.theme === "dark" ? "light" : "dark");
-});
-
-function setLang(lang) {
-    App.state.lang = lang;
-    $(".app").setAttribute("data-lang", lang);
-    localStorage.setItem("nc_lang", lang);
-    $("#langLabel").textContent = lang === "en" ? "HI" : "EN";
-    applyI18n();
-    toast("Language", lang === "en" ? "English" : "Hindi");
-}
-$("#langBtn").addEventListener("click", () => {
-    setLang(App.state.lang === "en" ? "hi" : "en");
-});
-
 /* ---------------- Counters (hero stats) ---------------- */
 function animateStats() {
     const nums = $$(".statNum");
@@ -994,15 +810,6 @@ function initCanvasFX() {
 
 /* ---------------- Init ---------------- */
 function boot() {
-    // load preferences
-    const savedTheme = localStorage.getItem("nc_theme");
-    const savedLang = localStorage.getItem("nc_lang");
-    if (savedTheme) App.state.theme = savedTheme;
-    if (savedLang) App.state.lang = savedLang;
-
-    setTheme(App.state.theme);
-    setLang(App.state.lang);
-
     renderSnippet();
     renderSkills("all");
     renderTimeline();
