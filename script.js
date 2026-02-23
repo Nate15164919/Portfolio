@@ -226,7 +226,7 @@ Technicien programmeur`,
                 desc: "Atelier de Professionnalisation 1 : Création d'un site web pour une exposition temporaire sur le Brutalisme.",
                 cover: "Projet/AP-1/bruta/images/home.jpg",
                 stack: ["HTML5", "CSS3", "Figma"],
-                meta: "",
+                meta: "Rapport de projet • 2024",
                 bullets: [
                     "Réalisé en équipe de 4 personnes, ce projet consistait à simuler la création de A à Z d'une entreprise spécialisée dans l'organisation d'expositions. Notre choix s'est porté sur la conception d'un événement immersif autour du brutalisme. Pendant que mes collaborateurs géraient la partie administrative, la documentation et la gestion de projet globale, j'ai pris en charge l'intégralité du volet digital.",
                     "Mon rôle : Développeur Front-End J'ai conçu et développé le site web promotionnel dédié à cette exposition temporaire, avec pour objectif de donner un 'avant-goût' visuel et interactif de l'événement aux visiteurs.",
@@ -254,7 +254,7 @@ Technicien programmeur`,
                 desc: "Atelier de Professionnalisation 2 :Étude théorique pour l'organisation 'Maison des Ligues de Lorraine' (M2L) ",
                 cover: "/FIles/Images/Projets/ap-2-back.jpg",
                 stack: ["Gestion de projet", "Communication technique", "Analyse de besoins"],
-                meta: "",
+                meta: "Rapport de projet • 2025",
                 bullets: [
                     "L'objectif était de répondre à deux problématiques techniques majeures en proposant un comparatif de trois solutions distinctes. Ce travail préparatoire visait à sélectionner la stratégie la plus pertinente en vue d'un déploiement réel sur infrastructure physique en deuxième année (AP3).",
                     "Le projet avais pour but de choisir une solution pour les 2 problématiques suivantes : choisir un serveur DCHP et choisir une solution de supervision pour l'infrastructure réseau de la M2L.",
@@ -281,7 +281,7 @@ Technicien programmeur`,
                 desc: "Atelier de Professionnalisation 3 : Mise en place d’un serveur VPN avec WireGuard.",
                 cover: "FIles/Images/Projets/wire.png",
                 stack: ["WireGuard", "SSH", "VPN", ""],
-                meta: "",
+                meta: "Rapport de projet • 2025",
                 bullets: [
                     "Role-based access (packs) with clear permission boundaries.",
                     "Fast table UI: filters, pagination feel, empty states, confirmations.",
@@ -306,7 +306,7 @@ Technicien programmeur`,
                 desc: "Atelier de Professionnalisation 4 : Mise en place d’un outil de Load Balancing Haproxy.",
                 cover: "FIles/Images/Projets/haproxy.png",
                 stack: ["Haproxy", "Nginx", "Debian", ""],
-                meta: "",
+                meta: "Rapport de projet • 2026",
                 bullets: [
                     "Role-based access (packs) with clear permission boundaries.",
                     "Fast table UI: filters, pagination feel, empty states, confirmations.",
@@ -331,7 +331,7 @@ Technicien programmeur`,
                 desc: "Projet citoyen : Comment la société essaie de s’adapter aux Personnes à Mobilité Réduite ?",
                 cover: "FIles/Images/Projets/presBG.jpg",
                 stack: ["Travail d'équipe", "Communication technique", "Analyse de besoins"],
-                meta: "",
+                meta: "Rapport de projet • 2025",
                 bullets: [
                     "Role-based access (packs) with clear permission boundaries.",
                     "Fast table UI: filters, pagination feel, empty states, confirmations.",
@@ -432,9 +432,9 @@ Technicien programmeur`,
                 title: "Migration Windows Server 2022",
                 category: "windows",
                 desc: "Procédures complètes et guide de migration vers Windows Server 2022.",
-                cover: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=70",
+                cover: "FIles/Images/Docu/windows-server.jpeg",
                 stack: ["Windows Server", "AD", "Migration"],
-                meta: "Guide technique • 2025",
+                meta: "Rapport et documentation technique • 2026",
                 bullets: [
                     "Analyse de l'existant et planification des étapes de migration.",
                     "Rédaction des procédures de sauvegarde et de restauration.",
@@ -442,7 +442,7 @@ Technicien programmeur`,
                 ],
                 links: [
                     {
-                        label: "Consulter le PDF",
+                        label: "Voir la documentation",
                         icon: "fa-solid fa-file-pdf",
                         href: "#"
                     }
@@ -451,10 +451,10 @@ Technicien programmeur`,
             {
                 title: "Sécurisation Serveur SSH",
                 category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
+                desc: "Mise en place du service SSH sur un serveur",
+                cover: "FIles/Images/Docu/sudo.avif",
                 stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                meta: "Documentation technique • 2026",
                 bullets: [
                     "Configuration du fichier sshd_config (Port, Root login, PubKey).",
                     "Mise en place de Fail2Ban pour prévenir les brutes-force.",
@@ -462,129 +462,109 @@ Technicien programmeur`,
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
                         href: "#"
                     }
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
+                title: "Installation Proxmox VE",
                 category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                desc: "Installation et configuration de Proxmox VE sur un serveur physique.",
+                cover: "FIles/Images/Docu/proxmox.png",
+                stack: ["Linux", "Proxmox", "Virtualization"],
+                meta: "Documentation technique • 2025",
                 bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
+                    "Installation de Proxmox VE sur un serveur physique.",
+                    "Configuration du réseau et des disques.",
+                    "Création de machines virtuelles et conteneurs."
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/proxmox.pdf"
                     }
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
-                category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                title: "Installation de Windows Server 2022 sur Proxmox VE",
+                category: "windows",
+                desc: "Installation et configuration d'une machine virtuelle Windows Server 2022 sur Proxmox VE.",
+                cover: "FIles/Images/Docu/windows-server.jpeg",
+                stack: ["Windows Server", "Proxmox", "Virtualization"],
+                meta: "Documentation technique • 2025",
                 bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
+                    "Installation de Windows Server 2022 sur Proxmox VE.",
+                    "Configuration du réseau et des disques.",
+                    "Installation des mise à jour et drivers pour la virtualisation."
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/win-2022.pdf"
                     }
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
-                category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                title: "Installation de Windows 11 sur Proxmox VE",
+                category: "windows",
+                desc: "Installation et configuration d'une machine virtuelle Windows 11 sur Proxmox VE.",
+                cover: "FIles/Images/Docu/windows-11-1500x430.jpg",
+                stack: ["Windows 11", "Proxmox", "Virtualization"],
+                meta: "Documentation technique • 2025",
                 bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
+                    "Installation de Windows 11 sur Proxmox VE.",
+                    "Configuration du réseau et des disques.",
+                    "Installation des mise à jour et drivers pour la virtualisation."
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/win-11.pdf"
                     }
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
+                title: "Installation et configuration de Zabbix",
                 category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                desc: "Installation et configuration du logiciel Zabbix pour la surveillance de serveurs.",
+                cover: "FIles/Images/Docu/Zabbix_logo.png",
+                stack: ["Linux", "Zabbix", "Monitoring"],
+                meta: "Documentation technique • 2024",
                 bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
+                    "Installation du serveur Zabbix.",
+                    "Configuration de la base de données MariaDB.",
+                    "Configuration du service Zabbix Server."
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/zabbix.pdf"
                     }
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
+                title: "Installation et configuration de GLPI",
                 category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
+                desc: "Installation et configuration du logiciel GLPI pour la gestion de parc informatique.",
+                cover: "FIles/Images/Docu/GLPI.webp",
+                stack: ["Linux", "GLPI", "Inventory"],
+                meta: "Documentation technique • 2024",
                 bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
+                    "Installation du serveur GLPI.",
+                    "Configuration de la base de données MariaDB.",
+                    "Configuration du service GLPI."
                 ],
                 links: [
                     {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
-                    }
-                ]
-            },
-            {
-                title: "Sécurisation Serveur SSH",
-                category: "linux",
-                desc: "Hardening d'un serveur Linux Debian pour la production.",
-                cover: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Linux", "Debian", "SSH", "Security"],
-                meta: "Procédure de sécurité • 2024",
-                bullets: [
-                    "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
-                    "Gestion des utilisateurs et des groupes sudo."
-                ],
-                links: [
-                    {
-                        label: "Voir la procédure",
-                        icon: "fa-brands fa-linux",
-                        href: "#"
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/glpi.pdf"
                     }
                 ]
             }
