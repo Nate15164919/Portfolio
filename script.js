@@ -1057,7 +1057,7 @@ function renderProjects(filter = null) {
         <div class="pTitle">${escapeHTML(p.title)}</div>
         <div class="pDesc">${escapeHTML(p.desc)}</div>
         <div class="pFoot">
-          <span><i class="fa-solid fa-sparkles"></i> case-study</span>
+          <span><i class="fa-solid fa-sparkles"></i></span>
           <span>${p.stack.join(" • ")}</span>
         </div>
       </div>
