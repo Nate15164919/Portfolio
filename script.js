@@ -321,6 +321,31 @@ Technicien programmeur`,
                 ],
             },
             {
+                title: "Projet-Citoyen",
+                category: "atelier",
+                desc: "RBAC + ops workflows with premium tables, filters, and audit-friendly screens.",
+                cover: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1400&q=70",
+                stack: ["React", "Node", "Mongo", "RBAC"],
+                meta: "Focus: security + clarity • Outcome: scalable ops UI",
+                bullets: [
+                    "Role-based access (packs) with clear permission boundaries.",
+                    "Fast table UI: filters, pagination feel, empty states, confirmations.",
+                    "API layer centralized for easy future changes.",
+                ],
+                links: [
+                    {
+                        label: "View (demo)",
+                        icon: "fa-solid fa-arrow-up-right-from-square",
+                        href: "#",
+                    },
+                    {
+                        label: "Code",
+                        icon: "fa-brands fa-github",
+                        href: "https://github.com/a2rp",
+                    },
+                ],
+            },
+            {
                 title: "exercice-1",
                 category: "exercice",
                 desc: "Checkout UX with receipts, status tracking, and clean form validation patterns.",
