@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorateur de Fichiers</title>
+    <style>
+        /* Design global propre et moderne */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f6f8fa; 
+            color: #24292e;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            border: 1px solid #e1e4e8;
+            border-radius: 6px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+            overflow: hidden; 
+        }
+        .header { 
+            background: #f6f8fa; 
+            padding: 16px 20px; 
+            font-weight: 600;
+            border-bottom: 1px solid #e1e4e8;
+            display: flex;
+            align-items: center;
+        }
+        .header-icon { margin-right: 10px; font-size: 1.2em; }
+        
+        /* Liste des fichiers */
+        .file-list { 
+            display: flex; 
+            flex-direction: column; 
+            margin: 0; 
+            padding: 0;
+        }
+        .file-item { 
+            display: flex; 
+            align-items: center; 
+            padding: 12px 20px; 
+            border-bottom: 1px solid #eaecef; 
+            text-decoration: none; 
+            color: #0366d6; 
+            transition: background 0.2s;
+        }
+        .file-item:last-child { border-bottom: none; }
+        .file-item:hover { background-color: #f1f8ff; color: #0366d6; text-decoration: underline; }
+        .file-icon { margin-right: 15px; font-size: 1.2em; filter: grayscale(20%); }
+        .file-name { flex-grow: 1; font-weight: 500; }
+        .file-size { color: #586069; font-size: 0.9em; }
+        
+        .loading { padding: 20px; text-align: center; color: #586069; font-style: italic; }
+        .error { padding: 20px; color: #cb2431; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="header-icon">📂</span> / FIles / Veille / Documentation
+        </div>
+        <div class="file-list" id="file-container">
+            <div class="loading">Recherche des fichiers en cours...</div>
+        </div>
+    </div>
+
+    <script>
+        // --- ⚠️ PARAMÈTRES À MODIFIER ⚠️ ---
+        const githubUser = "Nate15164919"; 
+        const githubRepo = "Portfolio";
+        const folderPath = "FIles/Veille/Docu"; 
+        // ------------------------------------
+
+        const apiUrl = `https://api.github.com/repos/${githubUser}/${githubRepo}/contents/${folderPath}`;
+        const container = document.getElementById('file-container');
+
+        // Fonction pour formater la taille des fichiers
+        function formatBytes(bytes, decimals = 2) {
+            if (!+bytes) return '0 Bytes';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
+        }
+
+        // Appel à l'API GitHub
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) throw new Error("Impossible de trouver le dossier. Vérifiez les majuscules et le nom du dépôt.");
+                return response.json();
+            })
+            .then(data => {
+                container.innerHTML = ''; // On retire le message de chargement
+                
+                // On filtre pour ne pas afficher le fichier index.html lui-même
+                const files = data.filter(file => file.name !== 'index.html');
+
+                if (files.length === 0) {
+                    container.innerHTML = '<div class="loading">Ce dossier est vide.</div>';
+                    return;
+                }
+
+                files.forEach(file => {
+                    const isDir = file.type === 'dir';
+                    // Détermine l'icône (dossier, image, ou fichier générique)
+                    let icon = isDir ? '📁' : '📄';
+                    if (!isDir && file.name.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) {
+                        icon = '🖼️';
+                    }
+
+                    // Lien vers la page GitHub Pages du fichier (ou le lien de téléchargement direct)
+                    const fileUrl = isDir ? '#' : file.download_url;
+                    const fileSize = isDir ? '' : formatBytes(file.size);
+
+                    const fileHtml = `
+                        <a href="${fileUrl}" class="file-item" target="_blank" rel="noopener noreferrer">
+                            <span class="file-icon">${icon}</span>
+                            <span class="file-name">${file.name}</span>
+                            <span class="file-size">${fileSize}</span>
+                        </a>
+                    `;
+                    container.innerHTML += fileHtml;
+                });
+            })
+            .catch(error => {
+                container.innerHTML = `<div class="error">❌ Erreur : ${error.message}</div>`;
+            });
+    </script>
+</body>
+</html>

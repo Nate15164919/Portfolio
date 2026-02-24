@@ -801,12 +801,12 @@ Technicien d’études informatiques`,
                     {
                         label: "Synthèse PDF",
                         icon: "fa-solid fa-file-pdf",
-                        href: ""
+                        href: "FIles/Veille/veille.pdf"
                     },
                     {
-                        label: "Notifications",
-                        icon: "fa-solid fa-bell",
-                        href: ""
+                        label: "Documentation",
+                        icon: "fa-solid fa-folder-open",
+                        href: "FIles/Veille/veille.html"
                     }
                 ]
             }
