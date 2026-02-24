@@ -325,7 +325,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Le projet",
                         icon: "fa-solid fa-arrow-up-right-from-square",
-                        href: "https://portfolio.nathaniel-t.fr/Projet/AP-1/bruta/home.html",
+                        href: "Projet/AP-1/bruta/home.html",
                     },
                     {
                         label: "Code",
@@ -470,7 +470,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Fichier du stage ",
                         icon: "fa-solid fa-folder-open",
-                        href: "https://github.com/Nate15164919/Portfolio/tree/main/FIles/Stage/2026/Images"
+                        href: "FIles/Stage/2026/stage2026.html"
                     }
                 ]
             },
@@ -555,7 +555,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Fichier du stage ",
                         icon: "fa-solid fa-folder-open",
-                        href: "https://github.com/Nate15164919/Portfolio/tree/main/FIles/Stage/2025/Images"
+                        href: "FIles/Stage/2025/stage2025.html"
                     }
                 ]
             },
