@@ -30,11 +30,11 @@ const App = {
     data: {
         email: "contact.pro@nathaniel-t.fr",
         snippet: `Option SISR
-L’option Solution d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et équipements informatiques 
+L’option Solutions d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et équipements informatiques 
 (installation, maintenance, sécurité). 
 En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
 
-Les techniciens supérieurs en informatique option SISR, peuvent accéder aux métiers de : 
+Les techniciens supérieurs en informatique option SISR peuvent accéder aux métiers de : 
 
 Administrateur systèmes et réseaux
 Informaticien support et déploiement
@@ -50,7 +50,7 @@ L’option Solutions Logicielles et Applications métiers forme des spécialiste
 En sortant d’un BTS SIO SLAM, vous serez capables de concevoir, de développer et de déployer des solutions applicatives 
 personnalisées tout en assurant leur maintenance corrective et évolutive.
 
-Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de : 
+Les techniciens supérieurs en informatique option SLAM sont préparés aux métiers de : 
 
 Développeur d’applications informatiques
 Développeur informatique
@@ -86,14 +86,14 @@ Technicien d’études informatiques`,
             {
                 group: "admin",
                 icon: "fa-solid fa-server",
-                name: "Domain Windows",
+                name: "Domaine Windows",
                 pct: 93,
                 tags: ["AD", "GPO", "RSAT", "LDAP"],
             },
             {
                 group: "admin",
                 icon: "fa-solid fa-cloud",
-                name: "Les Services d'Infrastructure",
+                name: "Services d'infrastructure",
                 pct: 90,
                 tags: ["DHCP", "DNS", "SFTP", "SSH"],
             },
@@ -101,9 +101,9 @@ Technicien d’études informatiques`,
             {
                 group: "admin",
                 icon: "fa-solid fa-network-wired",
-                name: "Adressage et Routage",
+                name: "Adressage et routage",
                 pct: 91,
-                tags: ["IPV4", "IPV6", "Routage Statique/Dynamique"],
+                tags: ["IPv4", "IPv6", "Routage statique/dynamique"],
             },
             {
                 group: "admin",
@@ -125,14 +125,14 @@ Technicien d’études informatiques`,
                 icon: "fa-solid fa-house-laptop",
                 name: "Proxmox",
                 pct: 76,
-                tags: ["VirtualMachine", "Cluster", "Docker"],
+                tags: ["VM", "Cluster", "Docker"],
             },
             {
                 group: "virtu",
                 icon: "fa-solid fa-ticket",
                 name: "GLPI",
                 pct: 88,
-                tags: ["Ticketing", "Support", "Suivie"],
+                tags: ["Ticketing", "Support", "Suivi"],
             },
             {
                 group: "virtu",
@@ -151,30 +151,30 @@ Technicien d’études informatiques`,
             {
                 group: "dev",
                 icon: "fa-brands fa-windows",
-                name: "Powershell",
+                name: "PowerShell",
                 pct: 65,
                 tags: ["Automatisation", "Programmes", "Scripts"],
             },
             {
                 group: "dev",
                 icon: "fa-brands fa-wordpress",
-                name: "Wordpress",
+                name: "WordPress",
                 pct: 95,
-                tags: ["Installation", "Pluggins", "Administration"],
+                tags: ["Installation", "Plugins", "Administration"],
             },
             {
                 group: "dev",
                 icon: "fa-solid fa-database",
-                name: "Base de données",
+                name: "Web & Base de données",
                 pct: 80,
                 tags: ["MySQL", "Nginx", "Administration", "PHP"],
             },
             {
                 group: "dev",
                 icon: "fa-solid fa-code",
-                name: "Base en programmation",
+                name: "Bases en programmation",
                 pct: 70,
-                tags: ["Python", "HTML/CSS", "Javascript", "JSON"],
+                tags: ["Python", "HTML/CSS", "JavaScript", "JSON"],
             },
         ],
 /*----------------- Work  -----------------*/
@@ -186,7 +186,7 @@ Technicien d’études informatiques`,
                 icon: "fa-solid fa-briefcase",
                 bullets: [
                     "Je suis à la recherche d'une alternance pour mon Bac +3 en tant qu'Administrateur Système et Réseau",
-                    "Pour une période de 1ans minimum (3 semaines en entreprise et 1semaine en formation) à partir de septembre 2026.",
+                    "Pour une période de 1 an minimum (3 semaines en entreprise et 1 semaine en formation) à partir de septembre 2026.",
                     "Je suis motivé à mettre en pratique mes compétences en administration système et réseau, ainsi qu'à apprendre de nouvelles technologies et méthodologies dans un environnement professionnel stimulant.",
                 ],
             },
@@ -196,10 +196,10 @@ Technicien d’études informatiques`,
                 period: "Janvier - Mars 2026 | STAGE",
                 icon: "fa-solid fa-wrench",
                 bullets: [
-                    "Migration d'un environnement obsolète Windows Server 2003 vers Windows Server 2022 ",
-                    "Etudes de cas sur l'alternative aux gafams",
-                    /*------mettre un liens clicable pour le compte rendu sur les gafam---------*/
-                    "Suivie de la migration de l'infrastructure d'une PME de 15 postes : planification, exécution, validation et documentation",
+                    "Migration d'un environnement obsolète Windows Server 2003 vers Windows Server 2022",
+                    "Études de cas sur l'alternative aux GAFAM",
+                    /*------mettre un lien cliquable pour le compte rendu sur les gafam---------*/
+                    "Suivi de la migration de l'infrastructure d'une PME de 15 postes : planification, exécution, validation et documentation",
                     "Gestion de parc informatique : supervision du matériel réseau (switchs, routeurs, points d’accès), inventaire et suivi des équipements",
                 ],
             },
@@ -222,14 +222,14 @@ Technicien d’études informatiques`,
             {
                 title: "AP-4",
                 category: "atelier",
-                desc: "Atelier de Professionnalisation 4 : Mise en place d’un outil de Load Balancing Haproxy.",
+                desc: "Atelier de Professionnalisation 4 : Mise en place d’un outil de Load Balancing HAProxy.",
                 cover: "FIles/Images/Projets/haproxy.png",
-                stack: ["Haproxy", "Nginx", "Debian", ""],
+                stack: ["HAProxy", "Nginx", "Debian"],
                 meta: "Rapport de projet • 2026",
                 bullets: [
                     "Travail collaboratif (équipe de 5) visant à concevoir et intégrer une infrastructure réseau complète répondant aux besoins de la Maison des Ligues (M2L).",
-                    "Mise en place d’un outil de Load Balancing Haproxy.",
-                    "Configuration et optimisation du service Haproxy.",
+                    "Mise en place d’un outil de Load Balancing HAProxy.",
+                    "Configuration et optimisation du service HAProxy.",
                 ],
                 links: [
                     {
@@ -238,7 +238,7 @@ Technicien d’études informatiques`,
                         href: "Projet/AP-4/haproxy.pdf",
                     },
                     {
-                        label: "Infrastructure de l'Haproxy",
+                        label: "Infrastructure HAProxy",
                         icon: "fa-solid fa-image",
                         href: "Projet/AP-4/haproxy.png",
                     },
@@ -254,7 +254,7 @@ Technicien d’études informatiques`,
                 category: "atelier",
                 desc: "Atelier de Professionnalisation 3 : Mise en place d’un serveur VPN avec WireGuard.",
                 cover: "FIles/Images/Projets/wire.png",
-                stack: ["WireGuard", "SSH", "VPN", ""],
+                stack: ["WireGuard", "SSH", "VPN"],
                 meta: "Rapport de projet • 2025",
                 bullets: [
                     "Travail collaboratif (équipe de 5) visant à concevoir et intégrer une infrastructure réseau complète répondant aux besoins de la Maison des Ligues (M2L).",
@@ -282,27 +282,27 @@ Technicien d’études informatiques`,
             {
                 title: "AP-2",
                 category: "atelier",
-                desc: "Atelier de Professionnalisation 2 :Étude théorique pour l'organisation 'Maison des Ligues de Lorraine' (M2L) ",
-                cover: "/FIles/Images/Projets/ap-2-back.jpg",
+                desc: "Atelier de Professionnalisation 2 : Étude théorique pour l'organisation 'Maison des Ligues de Lorraine' (M2L)",
+                cover: "FIles/Images/Projets/ap-2-back.jpg",
                 stack: ["Gestion de projet", "Communication technique", "Analyse de besoins"],
                 meta: "Rapport de projet • 2025",
                 bullets: [
                     "L'objectif était de répondre à deux problématiques techniques majeures en proposant un comparatif de trois solutions distinctes. Ce travail préparatoire visait à sélectionner la stratégie la plus pertinente en vue d'un déploiement réel sur infrastructure physique en deuxième année (AP3).",
-                    "Le projet avais pour but de choisir une solution pour les 2 problématiques suivantes : choisir un serveur DCHP et choisir une solution de supervision pour l'infrastructure réseau de la M2L.",
-                    "Ma contribution: J'ai mené une analyse approfondie des besoins et des contraintes techniques, en évaluant les différentes options disponibles pour répondre aux problématiques identifiées. J'ai ensuite synthétisé ces informations dans un comparatif clair et structuré, mettant en avant les avantages et les inconvénients de chaque solution.",
+                    "Le projet avait pour but de choisir une solution pour les 2 problématiques suivantes : choisir un serveur DHCP et choisir une solution de supervision pour l'infrastructure réseau de la M2L.",
+                    "Ma contribution : J'ai mené une analyse approfondie des besoins et des contraintes techniques, en évaluant les différentes options disponibles pour répondre aux problématiques identifiées. J'ai ensuite synthétisé ces informations dans un comparatif clair et structuré, mettant en avant les avantages et les inconvénients de chaque solution.",
                 ],
                 links: {
                     "Solution DHCP": [
-                        { label: "Solution retenue (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-wds_final.pdf" },
-                        { label: "Ma solution (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-Windows-1.pdf" },
-                        { label: "DHCP Radius", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCP-Radius-1.pdf" },
-                        { label: "DHCP avec ISC", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/DHCPisc-linux.pdf" },
+                        { label: "Solution retenue (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/DHCP-wds_final.pdf" },
+                        { label: "Ma solution (DHCP WDS)", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/DHCP-Windows-1.pdf" },
+                        { label: "DHCP Radius", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/DHCP-Radius-1.pdf" },
+                        { label: "DHCP avec ISC", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/DHCPisc-linux.pdf" },
                     ],
                     "Solution serveur de supervision": [
-                        { label: "Solution retenue (Zabbix)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-zabbix_final.pdf" },
-                        { label: "Ma solution (Nagios)", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-nagios.pdf" },
-                        { label: "PRTG Network Monitor", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-docu-rptg.pdf" },
-                        { label: "Zabbix", icon: "fa-solid fa-file-pdf", href: "/Projet/AP-2/supp-zabbix.pdf" },
+                        { label: "Solution retenue (Zabbix)", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/supp-zabbix_final.pdf" },
+                        { label: "Ma solution (Nagios)", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/supp-nagios.pdf" },
+                        { label: "PRTG Network Monitor", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/supp-docu-rptg.pdf" },
+                        { label: "Zabbix", icon: "fa-solid fa-file-pdf", href: "Projet/AP-2/supp-zabbix.pdf" },
                     ],
                 },
             },
@@ -315,7 +315,7 @@ Technicien d’études informatiques`,
                 meta: "Rapport de projet • 2024",
                 bullets: [
                     "Réalisé en équipe de 4 personnes, ce projet consistait à simuler la création de A à Z d'une entreprise spécialisée dans l'organisation d'expositions. Notre choix s'est porté sur la conception d'un événement immersif autour du brutalisme. Pendant que mes collaborateurs géraient la partie administrative, la documentation et la gestion de projet globale, j'ai pris en charge l'intégralité du volet digital.",
-                    "Mon rôle : Développeur Front-End J'ai conçu et développé le site web promotionnel dédié à cette exposition temporaire, avec pour objectif de donner un 'avant-goût' visuel et interactif de l'événement aux visiteurs.",
+                    "Mon rôle : Développeur Front-End. J'ai conçu et développé le site web promotionnel dédié à cette exposition temporaire, avec pour objectif de donner un 'avant-goût' visuel et interactif de l'événement aux visiteurs.",
                     "Réalisations : Intégration complète de l'interface à partir des maquettes Figma. Ce projet m'a permis d'appliquer les bonnes pratiques du développement Front-End, de respecter le design system initial et de consolider fortement mes bases techniques.",
                     "Axes d'amélioration envisagés : Afin de faire évoluer ce projet, j'ai identifié deux axes de travail majeurs :",
                     "Expérience Utilisateur (UX) : Optimisation du code CSS/JS pour corriger un bug de défilement (scroll) qui se bloque à certains endroits de la page.",
@@ -363,14 +363,14 @@ Technicien d’études informatiques`,
                 ],
             },
             {
-                title: "Exercice sur les Vlan",
+                title: "Exercice sur les VLAN",
                 category: "exercice",
-                desc: "Observation du trafic de diffusion d'une Vlan",
+                desc: "Observation du trafic de diffusion d'un VLAN",
                 cover: "FIles/Images/Autres/switch.avif",
                 stack: ["Switch", "VLAN", "Observation"],
                 meta: "Exercice • 2025",
                 bullets: [
-                    "Observation du trafic de diffusion d'une Vlan.",
+                    "Observation du trafic de diffusion d'un VLAN.",
                     "Identification des problèmes de communication entre les postes.",
                 ],
                 links: [
@@ -424,7 +424,7 @@ Technicien d’études informatiques`,
                 ]
             },
             {
-                title: "Sécurisation Serveur SSH",
+                title: "Sécurisation du serveur SSH",
                 category: "linux",
                 desc: "Mise en place du service SSH sur un serveur",
                 cover: "FIles/Images/Docu/sudo.avif",
@@ -432,7 +432,7 @@ Technicien d’études informatiques`,
                 meta: "Documentation technique • 2026",
                 bullets: [
                     "Configuration du fichier sshd_config (Port, Root login, PubKey).",
-                    "Mise en place de Fail2Ban pour prévenir les brutes-force.",
+                    "Mise en place de Fail2Ban pour prévenir les brute-force.",
                     "Gestion des utilisateurs et des groupes sudo."
                 ],
                 links: [
@@ -444,7 +444,7 @@ Technicien d’études informatiques`,
                 ]
             },
             {
-                title: "Installation et Configuration de Docker",
+                title: "Installation et configuration de Docker",
                 category: "linux",
                 desc: "Mise en place du service Docker sur un serveur Linux",
                 cover: "FIles/Images/Docu/855.jpg",
@@ -473,7 +473,7 @@ Technicien d’études informatiques`,
                 bullets: [
                     "Configuration du fichier nginx.conf.",
                     "Mise en place de sites web virtuels.",
-                    "Créer un Server Block"
+                    "Création d'un bloc serveur (Server Block)"
                 ],
                 links: [
                     {
@@ -484,7 +484,7 @@ Technicien d’études informatiques`,
                 ]
             },
             {
-                title: " Création et Configuration d'un Serveur SFTP",
+                title: "Création et configuration d'un serveur SFTP",
                 category: "linux",
                 desc: "Mise en place du service SFTP sur un serveur Linux",
                 cover: "FIles/Images/Docu/sftp.png",
@@ -504,7 +504,7 @@ Technicien d’études informatiques`,
                 ]
             },
             {
-                title: "Installation Proxmox VE",
+                title: "Installation de Proxmox VE",
                 category: "linux",
                 desc: "Installation et configuration de Proxmox VE sur un serveur physique.",
                 cover: "FIles/Images/Docu/proxmox.png",
@@ -531,10 +531,10 @@ Technicien d’études informatiques`,
                 stack: ["Stage", "Admin", "Documentation"],
                 meta: "Rapport de stage • 2026",
                 bullets: [
-                    "Mon role en tant que Technicien Système et Réseau",
+                    "Mon rôle en tant que Technicien Système et Réseau",
                     "Supervision d'un parc informatique",
-                    "Migration d'une Active Directory obsolète vers une nouvelle infrastructure Windows Server 2022",
-                    "Cas d'études sur l'alternative aux gafams",
+                    "Migration d'un Active Directory obsolète vers une nouvelle infrastructure Windows Server 2022",
+                    "Étude de cas sur l'alternative aux GAFAM",
                 ],
                 links: [
                     {
@@ -543,12 +543,12 @@ Technicien d’études informatiques`,
                         href: "FIles/Stage/2026/stage2026.pdf"
                     },
                     {
-                        label: "Voir le cas d'étude sur l'alternative aux gafams",
+                        label: "Voir le cas d'étude sur l'alternative aux GAFAM",
                         icon: "fa-solid fa-file-pdf",
                         href: "FIles/Stage/2026/gafams.pdf"
                     },
                     {
-                        label: "Fichier du stage ",
+                        label: "Fichier du stage",
                         icon: "fa-solid fa-folder-open",
                         href: "FIles/Stage/2026/stage2026.html"
                     }
@@ -564,7 +564,7 @@ Technicien d’études informatiques`,
                 bullets: [
                     "Installation de Windows Server 2022 sur Proxmox VE.",
                     "Configuration du réseau et des disques.",
-                    "Installation des mise à jour et drivers pour la virtualisation."
+                    "Installation des mises à jour et drivers pour la virtualisation."
                 ],
                 links: [
                     {
@@ -584,7 +584,7 @@ Technicien d’études informatiques`,
                 bullets: [
                     "Installation de Windows 11 sur Proxmox VE.",
                     "Configuration du réseau et des disques.",
-                    "Installation des mise à jour et drivers pour la virtualisation."
+                    "Installation des mises à jour et drivers pour la virtualisation."
                 ],
                 links: [
                     {
@@ -602,7 +602,7 @@ Technicien d’études informatiques`,
                 stack: ["Stage", "Support", "Documentation"],
                 meta: "Rapport de stage • 2025",
                 bullets: [
-                    "Mon role en tant que Technicien Support Informatique",
+                    "Mon rôle en tant que Technicien Support Informatique",
                     "Gestion de parc informatique : supervision du matériel réseau (switchs, routeurs, points d’accès), inventaire et suivi des équipements",
                     "Support technique : diagnostic et résolution des incidents réseau (connexion, accès serveurs, imprimantes), assistance aux utilisateurs.",
                 ],
@@ -613,7 +613,7 @@ Technicien d’études informatiques`,
                         href: "FIles/Stage/2025/stage-2025.pdf"
                     },
                     {
-                        label: "Fichier du stage ",
+                        label: "Fichier du stage",
                         icon: "fa-solid fa-folder-open",
                         href: "FIles/Stage/2025/stage2025.html"
                     }
@@ -783,7 +783,7 @@ Technicien d’études informatiques`,
                 ]
             },
             {
-                title: "Introduction To Ethical Hacking Course",
+                title: "Introduction to Ethical Hacking Course",
                 category: "security",
                 desc: "Codecademy • 2024",
                 cover: "FIles/Images/Docu/ethichack.jpg",
@@ -846,7 +846,7 @@ Technicien d’études informatiques`,
 /*----------------- Veille  -----------------*/
         veille: [
             {
-                title: "Sécurité des réseaux des transports en commun",
+                title: "Sécurité des réseaux de transport en commun",
                 desc: "Analyse des vulnérabilités et protection des infrastructures critiques de transport.",
                 cover: "FIles/Images/Veilles/fr-5eef62a4-ffd5-408f-a968-70d7d0d4e33f.webp",
                 stack: ["Cybersécurité", "IoT", "Transport", "Réseau"],
@@ -855,7 +855,7 @@ Technicien d’études informatiques`,
                     "Étude des protocoles de communication embarqués et de leurs failles potentielles.",
                     "Analyse des risques liés aux réseaux Wi-Fi publics et à la convergence IT/OT.",
                     "Impact des cyberattaques sur la sûreté des passagers et la continuité de service.",
-                    "Solutions de segmentation et de surveillance des flux réseaux."
+                    "Solutions de segmentation et de surveillance des flux réseau."
                 ],
                 links: [
                     {
@@ -1925,7 +1925,7 @@ function boot() {
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundSize = "cover";
 
-    toast("Opérationnel", "Portfolio chargé avec succées");
+    toast("Opérationnel", "Portfolio chargé avec succès");
 }
 
 boot();
