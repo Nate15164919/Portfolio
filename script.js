@@ -470,7 +470,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Fichier du stage ",
                         icon: "fa-solid fa-folder-open",
-                        href: "FIles/Stage/2026/Images"
+                        href: "https://github.com/Nate15164919/Portfolio/tree/main/FIles/Stage/2026/Images"
                     }
                 ]
             },
@@ -555,7 +555,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Fichier du stage ",
                         icon: "fa-solid fa-folder-open",
-                        href: "FIles/Stage/2025/Images"
+                        href: "https://github.com/Nate15164919/Portfolio/tree/main/FIles/Stage/2025/Images"
                     }
                 ]
             },
