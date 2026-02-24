@@ -444,6 +444,37 @@ Technicien d’études informatiques`,
                 ]
             },
             {
+                title: "Rapport de stage Tertio Engineering 2026",
+                category: "rapport",
+                desc: "Rapport de stage effectué au sein de l'entreprise Tertio Engineering.",
+                cover: "FIles/Stage/Logo-Tertio-Final_MidSize.png",
+                stack: ["Stage", "Admin", "Documentation"],
+                meta: "Rapport de stage • 2026",
+                bullets: [
+                    "Mon role en tant que Technicien Système et Réseau",
+                    "Supervision d'un parc informatique",
+                    "Migration d'une Active Directory obsolète vers une nouvelle infrastructure Windows Server 2022",
+                    "Cas d'études sur l'alternative aux gafams",
+                ],
+                links: [
+                    {
+                        label: "Voir le rapport de stage",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Stage/2026/stage2026.pdf"
+                    },
+                    {
+                        label: "Voir le cas d'étude sur l'alternative aux gafams",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Stage/2026/gafams.pdf"
+                    },
+                    {
+                        label: "Fichier du stage ",
+                        icon: "fa-solid fa-folder-open",
+                        href: "FIles/Stage/2026/Images"
+                    }
+                ]
+            },
+            {
                 title: "Installation Proxmox VE",
                 category: "linux",
                 desc: "Installation et configuration de Proxmox VE sur un serveur physique.",
@@ -500,6 +531,31 @@ Technicien d’études informatiques`,
                         label: "Voir la documentation",
                         icon: "fa-solid fa-file-pdf",
                         href: "FIles/Documents/win-11.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Rapport de stage Tertio Engineering 2025",
+                category: "rapport",
+                desc: "Rapport de stage effectué au sein de l'entreprise Tertio Engineering.",
+                cover: "FIles/Stage/Logo-Tertio-Final_MidSize.png",
+                stack: ["Stage", "Support", "Documentation"],
+                meta: "Rapport de stage • 2025",
+                bullets: [
+                    "Mon role en tant que Technicien Support Informatique",
+                    "Gestion de parc informatique : supervision du matériel réseau (switchs, routeurs, points d’accès), inventaire et suivi des équipements",
+                    "Support technique : diagnostic et résolution des incidents réseau (connexion, accès serveurs, imprimantes), assistance aux utilisateurs.",
+                ],
+                links: [
+                    {
+                        label: "Voir le rapport de stage",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Stage/2025/stage-2025.pdf"
+                    },
+                    {
+                        label: "Fichier du stage ",
+                        icon: "fa-solid fa-folder-open",
+                        href: "FIles/Stage/2025/Images"
                     }
                 ]
             },
