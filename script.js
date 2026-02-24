@@ -698,7 +698,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Voir la certification",
                         icon: "fa-solid fa-certificate",
-                        href: ""
+                        href: "FIles/Certifs/anssi.pdf"
                     }
                 ]
             },
