@@ -59,8 +59,7 @@ Analyste programmeur
 Programmeur analyste
 Programmeur d’applications
 Responsable des services applicatifs
-Technicien d’études informatiques
-Technicien programmeur`,
+Technicien d’études informatiques`,
 /*----------------- Competences  -----------------*/
         skills: [
             {
