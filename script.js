@@ -439,7 +439,87 @@ Technicien d’études informatiques`,
                     {
                         label: "Voir la documentation",
                         icon: "fa-solid fa-file-pdf",
-                        href: "#"
+                        href: "FIles/Documents/ssh.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Installation et Configuration de Docker",
+                category: "linux",
+                desc: "Mise en place du service Docker sur un serveur Linux",
+                cover: "FIles/Images/Docu/855.jpg",
+                stack: ["Linux", "Debian", "Docker", "Containerisation"],
+                meta: "Documentation technique • 2026",
+                bullets: [
+                    "Installation de Docker sur un serveur Debian.",
+                    "Configuration du daemon Docker.",
+                    "Création et gestion de conteneurs."
+                ],
+                links: [
+                    {
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/docker.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Mise en place d'un serveur web Nginx",
+                category: "linux",
+                desc: "Mise en place du service Nginx sur un serveur Linux",
+                cover: "FIles/Images/Docu/Nginx_logo.svg.png",
+                stack: ["Linux", "Debian", "Nginx", "Web Server"],
+                meta: "Documentation technique • 2026",
+                bullets: [
+                    "Configuration du fichier nginx.conf.",
+                    "Mise en place de sites web virtuels.",
+                    "Créer un Server Block"
+                ],
+                links: [
+                    {
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/Nginx.pdf"
+                    }
+                ]
+            },
+            {
+                title: " Création et Configuration d'un Serveur SFTP",
+                category: "linux",
+                desc: "Mise en place du service SFTP sur un serveur Linux",
+                cover: "FIles/Images/Docu/sftp.png",
+                stack: ["Linux", "Debian", "SFTP", "Security"],
+                meta: "Documentation technique • 2026",
+                bullets: [
+                    "Installation du serveur OpenSSH.",
+                    "Configuration du service SFTP.",
+                    "Création d'utilisateurs et de groupes."
+                ],
+                links: [
+                    {
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/sftp.pdf"
+                    }
+                ]
+            },
+            {
+                title: "Installation Proxmox VE",
+                category: "linux",
+                desc: "Installation et configuration de Proxmox VE sur un serveur physique.",
+                cover: "FIles/Images/Docu/proxmox.png",
+                stack: ["Linux", "Proxmox", "Virtualization"],
+                meta: "Documentation technique • 2025",
+                bullets: [
+                    "Installation de Proxmox VE sur un serveur physique.",
+                    "Configuration du réseau et des disques.",
+                    "Création de machines virtuelles et conteneurs."
+                ],
+                links: [
+                    {
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/proxmox.pdf"
                     }
                 ]
             },
@@ -471,26 +551,6 @@ Technicien d’études informatiques`,
                         label: "Fichier du stage ",
                         icon: "fa-solid fa-folder-open",
                         href: "FIles/Stage/2026/stage2026.html"
-                    }
-                ]
-            },
-            {
-                title: "Installation Proxmox VE",
-                category: "linux",
-                desc: "Installation et configuration de Proxmox VE sur un serveur physique.",
-                cover: "FIles/Images/Docu/proxmox.png",
-                stack: ["Linux", "Proxmox", "Virtualization"],
-                meta: "Documentation technique • 2025",
-                bullets: [
-                    "Installation de Proxmox VE sur un serveur physique.",
-                    "Configuration du réseau et des disques.",
-                    "Création de machines virtuelles et conteneurs."
-                ],
-                links: [
-                    {
-                        label: "Voir la documentation",
-                        icon: "fa-solid fa-file-pdf",
-                        href: "FIles/Documents/proxmox.pdf"
                     }
                 ]
             },
