@@ -186,7 +186,7 @@ Technicien d’études informatiques`,
                 icon: "fa-solid fa-briefcase",
                 bullets: [
                     "Je suis à la recherche d'une alternance pour mon Bac +3 en tant qu'Administrateur Système et Réseau",
-                    "Pour une période de 1 an minimum (3 semaines en entreprise et 1 semaine en formation) à partir de septembre 2026.",
+                    "Pour une période de 1 an minimum à partir de septembre 2026.",
                     "Je suis motivé à mettre en pratique mes compétences en administration système et réseau, ainsi qu'à apprendre de nouvelles technologies et méthodologies dans un environnement professionnel stimulant.",
                 ],
             },
@@ -196,11 +196,10 @@ Technicien d’études informatiques`,
                 period: "Janvier - Mars 2026 | STAGE",
                 icon: "fa-solid fa-wrench",
                 bullets: [
-                    "Migration d'un environnement obsolète Windows Server 2003 vers Windows Server 2022",
-                    "Études de cas sur l'alternative aux GAFAM",
-                    /*------mettre un lien cliquable pour le compte rendu sur les gafam---------*/
-                    "Suivi de la migration de l'infrastructure d'une PME de 15 postes : planification, exécution, validation et documentation",
-                    "Gestion de parc informatique : supervision du matériel réseau (switchs, routeurs, points d’accès), inventaire et suivi des équipements",
+                    "Ingénierie Open Source : Conception et déploiement d'une infrastructure souveraine sous Debian avec Active Directory (Samba 4) et environnement collaboratif (Nextcloud, LDAP).",
+                    "Études de cas sur <a href='FIles/Documents/gafam.pdf' target='_blank' rel='noopener noreferrer' style='color: #b4a0ff'>l'alternative aux GAFAM</a>",
+                    "Migration Serveur : Pilotage d'une migration critique sans coupure de Windows Server 2003 vers 2022, incluant le transfert des rôles FSMO en PowerShell.",
+                    "Support & MCO : Supervision proactive de l'infrastructure, maintien en condition opérationnelle et assistance technique aux utilisateurs.",
                 ],
             },
             {
@@ -209,11 +208,9 @@ Technicien d’études informatiques`,
                 period: "Avril - Juin 2025 | STAGE",
                 icon: "fa-solid fa-ticket",
                 bullets: [
-                    "Gestion du parc informatique : supervision du matériel réseau (switchs, routeurs, points d’accès), inventaire et suivi des équipements",
-                    "Déploiement et configuration de postes : intégration au domaine, affectation d’adresses IP, configuration de profils utilisateurs",
-                    "Administration réseau : gestion des comptes utilisateurs (Active Directory), droits d’accès, partage de ressources.",
-                    "Maintenance et support : diagnostic et résolution des incidents réseau (connexion, accès serveurs, imprimantes), assistance aux utilisateurs.",
-                    "Contribution aux projets d’amélioration : optimisation de services (DHCP, DNS, VLAN, sécurité – pare-feu, filtrage) et automatisation de l’outil de ticketing (suivi et relances automatiques).",
+                    "Gestion de parc : Audit, remise à neuf et déploiement à grande échelle d'équipements informatiques.",
+                    "Réseau & Stockage : Configuration de serveurs NAS sécurisés (RAID 1), gestion des règles pare-feu et diagnostics de performances réseau.",
+                    "Innovation : Automatisation des remontées d'incidents matériels et déploiement d'une IA locale (LLM) sur serveur de stockage.",
                 ],
             },
         ],
@@ -1041,7 +1038,7 @@ function renderTimeline() {
       <div class="tBody" aria-hidden="true">
         <div class="tInner">
           <ul class="bullets">
-            ${t.bullets.map((b) => `<li>${escapeHTML(b)}</li>`).join("")}
+            ${t.bullets.map((b) => `<li>${b}</li>`).join("")}
           </ul>
         </div>
       </div>
@@ -1672,7 +1669,7 @@ updateClock();
 
 /* ---------------- Resume button (demo) ---------------- */
 $("#openResume").addEventListener("click", () => {
-    window.open("FIles/Documents/CV-Nathaniel-T.pdf", "_blank");
+    window.open("FIles/Documents/cv-bts.pdf", "_blank");
 });
 
 /* ---------------- Magnetic buttons ---------------- */
