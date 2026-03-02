@@ -1676,8 +1676,12 @@ $("#openResume").addEventListener("click", () => {
 function initMagnetic() {
     const mags = $$(".magnetic");
     mags.forEach((el) => {
+        let r;
+        el.addEventListener("mouseenter", () => {
+            r = el.getBoundingClientRect();
+        });
         el.addEventListener("mousemove", (e) => {
-            const r = el.getBoundingClientRect();
+            if (!r) r = el.getBoundingClientRect();
             const x = e.clientX - r.left - r.width / 2;
             const y = e.clientY - r.top - r.height / 2;
             el.style.transform = `translate(${x * 0.12}px, ${y * 0.18}px)`;
@@ -1797,21 +1801,22 @@ function initCanvasFX() {
     function resize() {
         dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
         w = c.width = Math.floor(window.innerWidth * dpr);
-        
-        // Calculer la hauteur totale du document pour couvrir tout le contenu
-        const docH = Math.max(
-            document.body.scrollHeight,
-            document.documentElement.scrollHeight,
-            window.innerHeight
-        );
-        
-        h = c.height = Math.floor(docH * dpr);
-        c.style.width = window.innerWidth + "px";
-        c.style.height = docH + "px";
+        h = c.height = Math.floor(window.innerHeight * dpr);
+
+        // Force le canvas en position fixe pour couvrir uniquement le viewport
+        // Cela évite de dessiner des particules sur 5000px de hauteur
+        c.style.position = "fixed";
+        c.style.top = "0";
+        c.style.left = "0";
+        c.style.width = "100%";
+        c.style.height = "100%";
+        c.style.pointerEvents = "none";
+        c.style.zIndex = "-1";
+
         dots.length = 0;
 
         const count = Math.floor(
-            (window.innerWidth * docH) / 60000
+            (window.innerWidth * window.innerHeight) / 25000
         );
         for (let i = 0; i < count; i++) {
             dots.push(makeDot());
@@ -1880,10 +1885,6 @@ function initCanvasFX() {
 
     window.addEventListener("resize", resize);
     
-    // Observer les changements de taille du contenu (ex: ouverture d'accordéons)
-    const ro = new ResizeObserver(() => resize());
-    ro.observe(document.body);
-
     resize();
     step();
 }
