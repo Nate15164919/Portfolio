@@ -197,7 +197,7 @@ Technicien d’études informatiques`,
                 icon: "fa-solid fa-wrench",
                 bullets: [
                     "Ingénierie Open Source : Conception et déploiement d'une infrastructure souveraine sous Debian avec Active Directory (Samba 4) et environnement collaboratif (Nextcloud, LDAP).",
-                    "Études de cas sur <a href='FIles/Stage/2026/gafams.pdf' target='_blank' rel='noopener noreferrer' style='color: #b4a0ff'>l'alternative aux GAFAM</a>",
+                    "Études de cas sur <a href='https://drive.proton.me/urls/6CK9B1QDFM#FXYjFcnOtS82' target='_blank' rel='noopener noreferrer' style='color: #b4a0ff'>l'alternative aux GAFAM</a>",
                     "Migration Serveur : Pilotage d'une migration critique sans coupure de Windows Server 2003 vers 2022, incluant le transfert des rôles FSMO en PowerShell.",
                     "Support & MCO : Supervision proactive de l'infrastructure, maintien en condition opérationnelle et assistance technique aux utilisateurs.",
                 ],
@@ -542,7 +542,7 @@ Technicien d’études informatiques`,
                     {
                         label: "Voir le cas d'étude sur l'alternative aux GAFAM",
                         icon: "fa-solid fa-file-pdf",
-                        href: "FIles/Stage/2026/gafams.pdf"
+                        href: "https://drive.proton.me/urls/6CK9B1QDFM#FXYjFcnOtS82"
                     },
                     {
                         label: "Fichier du stage",
