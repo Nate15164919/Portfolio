@@ -357,6 +357,11 @@ Technicien d’études informatiques`,
                         icon: "fa-brands fa-github",
                         href: "https://github.com/Nate15164919/Portfolio/tree/main/Projet/Projet-Citoyen/projet-citoyen",
                     },
+                    {
+                        label: "Travail de Groupe",
+                        icon: "fa-brands fa-google-drive",
+                        href: "https://docs.google.com/document/d/1JJ_9XtND3sMGBSaHy9B4t7q74PuVGtkVJ8ACfz2lhiQ/edit?tab=t.0#heading=h.gybs4ysq77if",
+                    },
                 ],
             },
             {
