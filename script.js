@@ -386,7 +386,7 @@ Elle prépare à la conception, la programmation et la maintenance d'application
                     {
                         label: "Voir la documentation",
                         icon: "fa-solid fa-file-pdf",
-                        href: "#"
+                        href: "https://drive.proton.me/urls/SR4HA7DTQM#CStmR4ob1FKD"
                     }
                 ]
             },
@@ -507,7 +507,7 @@ Elle prépare à la conception, la programmation et la maintenance d'application
                     {
                         label: "Voir le rapport de stage",
                         icon: "fa-solid fa-file-pdf",
-                        href: "FIles/Stage/2026/stage2026.pdf"
+                        href: "https://drive.proton.me/urls/JFPGEM0WP0#GUPqBA3BVVh7"
                     },
                     {
                         label: "Voir le cas d'étude sur l'alternative aux GAFAM",
@@ -577,7 +577,7 @@ Elle prépare à la conception, la programmation et la maintenance d'application
                     {
                         label: "Voir le rapport de stage",
                         icon: "fa-solid fa-file-pdf",
-                        href: "FIles/Stage/2025/stage-2025.pdf"
+                        href: "https://drive.proton.me/urls/QZ86AB8VAG#KRMBGHXFUGuP"
                     },
                     {
                         label: "Fichier du stage",
@@ -828,7 +828,7 @@ Elle prépare à la conception, la programmation et la maintenance d'application
                     {
                         label: "Synthèse PDF",
                         icon: "fa-solid fa-file-pdf",
-                        href: "FIles/Veille/veille.pdf"
+                        href: "https://drive.proton.me/urls/20VGJHGZ7G#k3jXznj2eEGz"
                     },
                     {
                         label: "Documentation",
