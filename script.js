@@ -1,13 +1,5 @@
 /* ---------------------------
-   NeonCraft Portfolio (CodePen)
-   - Theme + EN/HI toggle
-   - Scroll spy
-   - Drawer + Modal
-   - Particles canvas
-   - Skill filter + bar animation
-   - Timeline accordion
-   - Toasts + copy helpers
-   - Magnetic micro-interactions
+Debut
 ---------------------------- */
 
 const $ = (q, root = document) => root.querySelector(q);
@@ -29,37 +21,10 @@ const App = {
     },
     data: {
         email: "contact.pro@nathaniel-t.fr",
-        snippet: `Option SISR
-L’option Solutions d’Infrastructure, Systèmes et Réseaux forme des professionnels des réseaux et équipements informatiques 
-(installation, maintenance, sécurité). 
-En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.
-
-Les techniciens supérieurs en informatique option SISR peuvent accéder aux métiers de : 
-
-Administrateur systèmes et réseaux
-Informaticien support et déploiement
-Pilote d’exploitation
-Support systèmes et réseaux
-Technicien d’infrastructure
-Technicien de production
-Technicien micro et réseaux
-
-Option SLAM
-L’option Solutions Logicielles et Applications métiers forme des spécialistes des logiciels 
-(rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
-En sortant d’un BTS SIO SLAM, vous serez capables de concevoir, de développer et de déployer des solutions applicatives 
-personnalisées tout en assurant leur maintenance corrective et évolutive.
-
-Les techniciens supérieurs en informatique option SLAM sont préparés aux métiers de : 
-
-Développeur d’applications informatiques
-Développeur informatique
-Analyste d’applications ou d’études
-Analyste programmeur
-Programmeur analyste
-Programmeur d’applications
-Responsable des services applicatifs
-Technicien d’études informatiques`,
+        snippetSISR: `L’option Solutions d’Infrastructure, Systèmes et Réseaux est dédiée à l'administration des systèmes et des réseaux. 
+Elle forme des professionnels capables de concevoir, installer, maintenir et sécuriser l'infrastructure informatique d'une entreprise (serveurs, équipements réseaux, cloud, cybersécurité).`,
+        snippetSLAM: `L’option Solutions Logicielles et Applications est centrée sur le développement logiciel. 
+Elle prépare à la conception, la programmation et la maintenance d'applications (web, mobiles, lourdes), ainsi qu'à la conception et l'exploitation de bases de données.`,
 /*----------------- Competences  -----------------*/
         skills: [
             {
@@ -928,7 +893,15 @@ async function copyText(text) {
 
 /* ---------------- Build sections ---------------- */
 function renderSnippet() {
-    $("#codeSnippet").textContent = App.data.snippet;
+    const snippetSISR = $("#codeSnippetSISR");
+    const snippetSLAM = $("#codeSnippetSLAM");
+    
+    if (snippetSISR) snippetSISR.textContent = App.data.snippetSISR;
+    if (snippetSLAM) snippetSLAM.textContent = App.data.snippetSLAM;
+    
+    // Rétrocompatibilité avec l'ancien conteneur unique
+    const snippetFull = $("#codeSnippet");
+    if (snippetFull) snippetFull.textContent = App.data.snippetSISR + "\n\n" + App.data.snippetSLAM;
 }
 function renderSkills(filter = null) {
     if (filter) {
@@ -1634,10 +1607,6 @@ $("#emailBtn").addEventListener("click", async () => {
         ok ? "Copied" : "Oops",
         ok ? "Email copied to clipboard" : "Copy failed"
     );
-});
-$("#copySnippet").addEventListener("click", async () => {
-    const ok = await copyText(App.data.snippet);
-    toast(ok ? "Copied" : "Oops", ok ? "Snippet copied" : "Copy failed");
 });
 
 /* ---------------- Form ---------------- */
