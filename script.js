@@ -25,6 +25,9 @@ const App = {
 Elle forme des professionnels capables de concevoir, installer, maintenir et sécuriser l'infrastructure informatique d'une entreprise (serveurs, équipements réseaux, cloud, cybersécurité).`,
         snippetSLAM: `L’option Solutions Logicielles et Applications est centrée sur le développement logiciel. 
 Elle prépare à la conception, la programmation et la maintenance d'applications (web, mobiles, lourdes), ainsi qu'à la conception et l'exploitation de bases de données.`,
+        snippetNew: `La cybersécurité est un pilier du BTS SIO via un bloc de compétences commun obligatoire. 
+L'option SISR se concentre sur la protection des réseaux et infrastructures, tandis que l'option SLAM privilégie le développement d'applications sécurisées et la protection des données. 
+C'est une formation clé pour acquérir les réflexes techniques nécessaires à la prévention des cyberattaques et à la sécurisation du système d'information de l'entreprise.`,
 /*----------------- Competences  -----------------*/
         skills: [
             {
@@ -895,13 +898,15 @@ async function copyText(text) {
 function renderSnippet() {
     const snippetSISR = $("#codeSnippetSISR");
     const snippetSLAM = $("#codeSnippetSLAM");
+    const snippetNew = $("#codeSnippetNew");
     
     if (snippetSISR) snippetSISR.textContent = App.data.snippetSISR;
     if (snippetSLAM) snippetSLAM.textContent = App.data.snippetSLAM;
+    if (snippetNew) snippetNew.textContent = App.data.snippetNew;
     
     // Rétrocompatibilité avec l'ancien conteneur unique
     const snippetFull = $("#codeSnippet");
-    if (snippetFull) snippetFull.textContent = App.data.snippetSISR + "\n\n" + App.data.snippetSLAM;
+    if (snippetFull) snippetFull.textContent = App.data.snippetSISR + "\n\n" + App.data.snippetSLAM + "\n\n" + App.data.snippetNew;
 }
 function renderSkills(filter = null) {
     if (filter) {
