@@ -394,6 +394,26 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
                 ]
             },
             {
+                title: "Déploiement d'une PKI d'Entreprise et Sécurisation TLS",
+                category: "windows",
+                desc: "Mise en place d'une PKI et sécurisation TLS",
+                cover: "FIles/Images/Docu/certif.jpg",
+                stack: ["Windows", "AD", "PKI", "TLS"],
+                meta: "Documentation technique • 2026",
+                bullets: [
+                    "Mise en place d'une autorité de certification (CA) interne.",
+                    "Configuration des certificats numériques.",
+                    "Ajout des certificat pour sur les serveurs"
+                ],
+                links: [
+                    {
+                        label: "Voir la documentation",
+                        icon: "fa-solid fa-file-pdf",
+                        href: "FIles/Documents/certificat.pdf"
+                    }
+                ]
+            },
+            {
                 title: "Sécurisation du serveur SSH",
                 category: "linux",
                 desc: "Mise en place du service SSH sur un serveur",
