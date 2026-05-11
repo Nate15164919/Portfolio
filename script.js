@@ -836,14 +836,14 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
 /*----------------- Veille  -----------------*/
         veille: [
             {
-                title: "Sécurité des réseaux de transport en commun",
+                title: "L'Architecture et la Cybersécurité du Grand Paris Express",
                 desc: "Analyse des vulnérabilités et protection des infrastructures critiques de transport.",
                 cover: "FIles/Images/Veilles/fr-5eef62a4-ffd5-408f-a968-70d7d0d4e33f.webp",
                 stack: ["Cybersécurité", "IoT", "Transport", "Réseau"],
                 meta: "Sujet de veille • 2024 - 2026",
                 bullets: [
                     "Étude des protocoles de communication embarqués et de leurs failles potentielles.",
-                    "Analyse des risques liés aux réseaux Wi-Fi publics et à la convergence IT/OT.",
+                    "Analyse des risques liés aux réseaux Wi-Fi publics.",
                     "Impact des cyberattaques sur la sûreté des passagers et la continuité de service.",
                     "Solutions de segmentation et de surveillance des flux réseau."
                 ],
@@ -851,7 +851,7 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
                     {
                         label: "Synthèse PDF",
                         icon: "fa-solid fa-file-pdf",
-                        href: "https://drive.proton.me/urls/20VGJHGZ7G#k3jXznj2eEGz"
+                        href: "https://drive.proton.me/urls/JPTHHSYTCR#ZXs16D8ff7NN"
                     },
                     {
                         label: "Documentation",
