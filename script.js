@@ -21,13 +21,6 @@ const App = {
     },
     data: {
         email: "contact.pro@nathaniel-t.fr",
-        snippetSISR: `L’option Solutions d’Infrastructure, Systèmes et Réseaux est dédiée à l'administration des systèmes et des réseaux. 
-Elle forme des professionnels capables de concevoir, installer, maintenir et sécuriser l'infrastructure informatique d'une entreprise (serveurs, équipements réseaux, cloud, cybersécurité).`,
-        snippetSLAM: `L’option Solutions Logicielles et Applications est centrée sur le développement logiciel. 
-Elle prépare à la conception, la programmation et la maintenance d'applications (web, mobiles, lourdes), ainsi qu'à la conception et l'exploitation de bases de données.`,
-        snippetCyber: `La cybersécurité est un pilier du BTS SIO via un bloc de compétences commun obligatoire. 
-L'option SISR se concentre sur la protection des réseaux et infrastructures, tandis que l'option SLAM privilégie le développement d'applications sécurisées et la protection des données. 
-C'est une formation clé pour acquérir les réflexes techniques nécessaires à la prévention des cyberattaques et à la sécurisation du système d'information de l'entreprise.`,
 /*----------------- Competences  -----------------*/
         skills: [
             {
@@ -153,8 +146,8 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
                 period: "2026 - 2027",
                 icon: "fa-solid fa-briefcase",
                 bullets: [
-                    "Je suis à la recherche d'une alternance pour mon Bac +3 en tant qu'Administrateur Systèmes et Réseaux",
-                    "Pour une période de 1 an minimum à partir de septembre 2026.",
+                    "Je suis à la recherche d'une alternance dans le cadre de ma Licence Professionnelle en tant qu'Administrateur Systèmes et Réseaux",
+                    "Pour une période de 1 an minimum, à partir de septembre 2026. Pour voir directement mon planning : <a href='FIles/Documents/Calendrier_LP_MRT_2026_2027.pdf' target='_blank' rel='noopener noreferrer' style='color: #b4a0ff'>Calendrier 2026-2027</a>",
                     "Je suis motivé à mettre en pratique mes compétences en administration systèmes et réseaux, ainsi qu'à apprendre de nouvelles technologies et méthodologies dans un environnement professionnel stimulant.",
                 ],
             },
@@ -296,39 +289,6 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
                         label: "Code",
                         icon: "fa-brands fa-github",
                         href: "https://github.com/Nate15164919/Portfolio/tree/main/Projet/AP-1/bruta",
-                    },
-                ],
-            },
-            {
-                title: "Projet-Citoyen",
-                category: "atelier",
-                desc: "Projet citoyen : Comment la société essaie de s’adapter aux Personnes à Mobilité Réduite ?",
-                cover: "FIles/Images/Projets/presBG.jpg",
-                stack: ["Travail d'équipe", "Communication technique", "Analyse de besoins"],
-                meta: "Rapport de projet • 2025",
-                bullets: [
-                    "Travail collaboratif visant à analyser et répondre à des problématiques sociétales concrètes concernant les Personnes à Mobilité Réduite (PMR). Le projet a été mené au sein d'une équipe pluridisciplinaire de 6 personnes (3 profils infrastructure réseaux et 3 profils développement).",
-                    "Rédaction de deux articles ciblés sur l'inclusion et l'accessibilité : ",
-                    "L'accessibilité des transports en commun parisiens pour les PMR.",
-                    "L'aménagement de l'espace public dans la ville de Plaisir.",
-                    "Conception technique : Participation à la création d'un site web interactif pour centraliser et mettre en valeur les articles du groupe.",
-                    "Restitution du travail accompli lors d'une présentation orale.",
-                ],
-                links: [
-                    {
-                        label: "Le projet",
-                        icon: "fa-solid fa-arrow-up-right-from-square",
-                        href: "Projet/Projet-Citoyen/projet-citoyen/index.html",
-                    },
-                    {
-                        label: "Code",
-                        icon: "fa-brands fa-github",
-                        href: "https://github.com/Nate15164919/Portfolio/tree/main/Projet/Projet-Citoyen/projet-citoyen",
-                    },
-                    {
-                        label: "Travail de Groupe",
-                        icon: "fa-brands fa-google-drive",
-                        href: "https://docs.google.com/document/d/1JJ_9XtND3sMGBSaHy9B4t7q74PuVGtkVJ8ACfz2lhiQ/edit?tab=t.0#heading=h.gybs4ysq77if",
                     },
                 ],
             },
@@ -833,34 +793,6 @@ C'est une formation clé pour acquérir les réflexes techniques nécessaires à
                 ]
             }
         ],
-/*----------------- Veille  -----------------*/
-        veille: [
-            {
-                title: "L'Architecture et la Cybersécurité du Grand Paris Express",
-                desc: "Analyse des vulnérabilités et protection des infrastructures critiques de transport.",
-                cover: "FIles/Images/Veilles/fr-5eef62a4-ffd5-408f-a968-70d7d0d4e33f.webp",
-                stack: ["Cybersécurité", "IoT", "Transport", "Réseau"],
-                meta: "Sujet de veille • 2024 - 2026",
-                bullets: [
-                    "Étude des protocoles de communication embarqués et de leurs failles potentielles.",
-                    "Analyse des risques liés aux réseaux Wi-Fi publics.",
-                    "Impact des cyberattaques sur la sûreté des passagers et la continuité de service.",
-                    "Solutions de segmentation et de surveillance des flux réseau."
-                ],
-                links: [
-                    {
-                        label: "Synthèse PDF",
-                        icon: "fa-solid fa-file-pdf",
-                        href: "https://drive.proton.me/urls/JPTHHSYTCR#ZXs16D8ff7NN"
-                    },
-                    {
-                        label: "Documentation",
-                        icon: "fa-solid fa-folder-open",
-                        href: "FIles/Veille/veille.html"
-                    }
-                ]
-            }
-        ],
     },
 };
 /* ---------------- UI helpers ---------------- */
@@ -915,19 +847,6 @@ async function copyText(text) {
 }
 
 /* ---------------- Build sections ---------------- */
-function renderSnippet() {
-    const snippetSISR = $("#codeSnippetSISR");
-    const snippetSLAM = $("#codeSnippetSLAM");
-    const snippetCyber = $("#codeSnippetCyber");
-    
-    if (snippetSISR) snippetSISR.textContent = App.data.snippetSISR;
-    if (snippetSLAM) snippetSLAM.textContent = App.data.snippetSLAM;
-    if (snippetCyber) snippetCyber.textContent = App.data.snippetCyber;
-    
-    // Rétrocompatibilité avec l'ancien conteneur unique
-    const snippetFull = $("#codeSnippet");
-    if (snippetFull) snippetFull.textContent = App.data.snippetSISR + "\n\n" + App.data.snippetSLAM + "\n\n" + App.data.snippetCyber;
-}
 function renderSkills(filter = null) {
     if (filter) {
         App.state.skillFilter = filter;
@@ -1325,51 +1244,6 @@ function renderCertifications(filter = null) {
     });
 }
 
-function renderVeille() {
-    const root = $("#veilleGrid");
-    if (!root) return;
-    root.innerHTML = App.data.veille
-        .map(
-            (p, idx) => `
-    <div class="pCard" data-veille-idx="${idx}" role="button" tabindex="0" aria-label="Open veille ${escapeHTML(
-                p.title
-            )}">
-      <div class="pCover" style="background-image:url('${p.cover}')">
-        <div class="pOverlay">
-          <div class="pStack">
-            ${p.stack
-                .slice(0, 3)
-                .map((s) => `<span class="stackChip">${escapeHTML(s)}</span>`)
-                .join("")}
-          </div>
-          <div class="stackChip"><i class="fa-solid fa-up-right-from-square"></i></div>
-        </div>
-      </div>
-      <div class="pBody">
-        <div class="pTitle">${escapeHTML(p.title)}</div>
-        <div class="pDesc">${escapeHTML(p.desc)}</div>
-        <div class="pFoot">
-          <span><i class="fa-solid fa-binoculars"></i> veille</span>
-          <span>${p.stack.join(" • ")}</span>
-        </div>
-      </div>
-    </div>
-  `
-        )
-        .join("");
-
-    $$(".pCard[data-veille-idx]", root).forEach((card) => {
-        const open = () => openVeilleModal(Number(card.dataset.veilleIdx));
-        card.addEventListener("click", open);
-        card.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                open();
-            }
-        });
-    });
-}
-
 /* ---------------- Modal ---------------- */
 function openProjectModal(idx) {
     const p = App.data.projects[idx];
@@ -1486,39 +1360,6 @@ function openCertModal(idx) {
     $("#modalWrap").setAttribute("aria-hidden", "false");
     App.state.modal = true;
     toast("Ouvert", "Détails sur la certification");
-}
-
-function openVeilleModal(idx) {
-    const p = App.data.veille[idx];
-    if (!p) return;
-
-    $("#modalTitle").textContent = p.title;
-    $("#modalCover").style.backgroundImage = `url('${p.cover}')`;
-    $("#modalMeta").textContent = p.meta;
-    $("#modalDesc").textContent = p.desc;
-
-    $("#modalBullets").innerHTML = `
-    <ul class="bullets">
-      ${p.bullets.map((b) => `<li>${escapeHTML(b)}</li>`).join("")}
-    </ul>
-  `;
-
-    $("#modalLinks").innerHTML = p.links
-        .map(
-            (l) => `
-    <a class="btn secondary magnetic" href="${
-        l.href
-    }" target="_blank" rel="noopener">
-      <i class="${l.icon}"></i><span>${escapeHTML(l.label)}</span>
-    </a>
-  `
-        )
-        .join("");
-
-    $("#modalWrap").classList.add("open");
-    $("#modalWrap").setAttribute("aria-hidden", "false");
-    App.state.modal = true;
-    toast("Ouvert", "Détails sur la veille");
 }
 
 function closeModal() {
@@ -1668,7 +1509,7 @@ updateClock();
 
 /* ---------------- Resume button (demo) ---------------- */
 $("#openResume").addEventListener("click", () => {
-    window.open("FIles/Documents/cv-bts.pdf", "_blank");
+    window.open("FIles/Documents/CV-Nathaniel-T.pdf", "_blank");
 });
 
 /* ---------------- Magnetic buttons ---------------- */
@@ -1890,13 +1731,11 @@ function initCanvasFX() {
 
 /* ---------------- Init ---------------- */
 function boot() {
-    renderSnippet();
     renderSkills("all");
     renderTimeline();
     renderProjects();
     renderDocumentation();
     renderCertifications();
-    renderVeille();
 
     initNameType();
     initScrollSpy();
