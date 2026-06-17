@@ -1463,15 +1463,15 @@ function animateStats() {
 $("#copyEmail").addEventListener("click", async () => {
     const ok = await copyText(App.data.email);
     toast(
-        ok ? "Copied" : "Oops",
-        ok ? "Email copied to clipboard" : "Copy failed (browser restriction)"
+        ok ? "Copié" : "Oops",
+        ok ? "Email copié dans le presse-papier" : "Copie Impossible"
     );
 });
 $("#emailBtn").addEventListener("click", async () => {
     const ok = await copyText(App.data.email);
     toast(
-        ok ? "Copied" : "Oops",
-        ok ? "Email copied to clipboard" : "Copy failed"
+        ok ? "Copié" : "Oops",
+        ok ? "Email copié dans le presse-papier" : "Copie Impossible"
     );
 });
 
